@@ -1,5 +1,4 @@
-export { default as Beach } from './Beach';
-export { default as Coral } from './Coral';
-export { default as Glacier } from './Glacier';
-export { default as Savanna } from './Savanna';
-
+export { default as Atoms } from './Atoms';
+export { default as Molecules } from './Molecules';
+export { default as Organisms } from './Organisms';
+export { default as Ecosystems } from './Ecosystems';

@@ -4,10 +4,10 @@
 :root {
   --body-color: #2c2d2a;
   --bg-color: #e6decf;
-  --savanna-bg: #e9bf8b;
-  --beach-bg: #e6dac4;
-  --glacier-bg: #b6d6c8;
-  --coral-bg: #e86357;
+  --ecosystems-bg: #e0c5a4;
+  --atoms-bg: #e6dac4;
+  --molecules-bg: #c6d4ce;
+  --organisms-bg: #e7aba5;
   --arrow-fill: #333231;
   --body-font: 'Montserrat', sans-serif;
   --italic-font: 'EB Garamond', serif;
@@ -46,18 +46,22 @@ body {
   }
 }
 
-#beach {
-  background-color: var(--beach-bg);
+#atoms {
+  background-color: var(--atoms-bg);
 }
 
-#coral {
-  background-color: var(--coral-bg);
+#molecules {
+  background-color: var(--molecules-bg);
 }
 
-#glacier {
-  background-color: var(--glacier-bg);
+#organisms {
+  background-color: var(--organisms-bg);
 }
 
-#savanna {
-  background-color: var(--savanna-bg);
+#ecosystems {
+  background-color: var(--ecosystems-bg);
+}
+
+.active {
+  text-decoration: underline;
 }

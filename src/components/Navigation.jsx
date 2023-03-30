@@ -1,13 +1,23 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { AiFillRobot } from 'react-icons/ai';
 import { FaHamburger } from 'react-icons/fa';
 import CartIcon from '../assets/CartIcon';
 import ProfileIcon from '../assets/ProfileIcon';
 import SearchIcon from '../assets/SearchIcon';
-import HamburgerMenu from '../assets/HamburgerMenu';
+import { useLocation, useMatch } from 'react-router-dom';
 
+const links = [
+  { path: '/', text: 'atoms' },
+  { path: '/molecules', text: 'molecules' },
+  { path: '/organisms', text: 'organisms' },
+  { path: '/ecosystems', text: 'ecosystems' },
+  { path: '/products', text: 'products' },
+];
 export default function Navigation() {
+  const { pathname } = useLocation();
+  const capitalize = (str) => str[0].toUpperCase() + str.slice(1);
+
   return (
     <Header>
       <LogoBox>
@@ -16,10 +26,11 @@ export default function Navigation() {
       </LogoBox>
 
       <HeaderMenu>
-        <Link to='/'>Beach</Link>
-        <Link to='/coral'>Coral</Link>
-        <Link to='/glacier'>Glacier</Link>
-        <Link to='/savanna'>Savanna</Link>
+        {links?.map((item) => (
+          <NavLink to={item.path} activeClassName='active'>
+            {pathname === item.path ? capitalize(item.text) : item.text}
+          </NavLink>
+        ))}
       </HeaderMenu>
       <HamburgerBox>
         <FaHamburger size='1.5rem' />
@@ -95,13 +106,9 @@ const MainTitle = styled.h1`
   font-size: 30px;
   font-weight: 400;
   line-height: 1em;
-  display: none;
+  display: block;
+  font-size: 15px;
   margin-left: 0.3rem;
-
-  @media screen and (max-width: 740px) {
-    display: block;
-    font-size: 25px;
-  }
 `;
 
 const HamburgerBox = styled.div`

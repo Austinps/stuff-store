@@ -2,22 +2,22 @@ import styled from 'styled-components';
 import ProductCard from './ProductCard';
 const products = [
   {
-    name: 'beach',
+    name: 'Atoms',
     image:
       'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/bottle_beach.png?v=11784267851598469514',
   },
   {
-    name: 'coral',
-    image:
-      'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Coral_OK.png?v=14596995446202437119',
-  },
-  {
-    name: 'glacier',
+    name: 'Molecules',
     image:
       'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Glacier_OK.png?v=7185877315400411030',
   },
   {
-    name: 'savanna',
+    name: 'Organisms',
+    image:
+      'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Coral_OK.png?v=14596995446202437119',
+  },
+  {
+    name: 'Ecosystems',
     image:
       'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/savanna_OK.png?v=4783820813181844557',
   },

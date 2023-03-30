@@ -2,16 +2,18 @@ import styled from 'styled-components';
 import ArrowIcon from '../assets/ArrowIcon';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 
-export default function Glacier() {
+export default function Atoms() {
   return (
     <Main>
       <LeftSide>
         <MainContent>
           <br />
+
           <MainHeader>Digital</MainHeader>
           <MainTitle>Stuff</MainTitle>
+
           <MainContentTitle>
-            It takes 500 years for a plastic bottle to decompose.
+            It takes 500 years for our plastic bottles to decompose.
           </MainContentTitle>
           <div className='more-menu'>
             Shop Now
@@ -21,8 +23,8 @@ export default function Glacier() {
       </LeftSide>
       <Center>
         <AiOutlineArrowLeft />
-        <Card id='glacier'>
-          <MainHeader>Glacier Bottle</MainHeader>
+        <Card id='atoms'>
+          <ProductTitle>Atoms</ProductTitle>
           <hr />
           <MainContentSubtitle>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -35,21 +37,36 @@ export default function Glacier() {
             accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
             no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
             dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua.
+            tempor invidunt labore dolore magna aliquyam erat, sed diam sanctus
+            est voluptua.
           </MainContentSubtitle>
+          <MainContentSubtitleMobile>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est sit amet.
+          </MainContentSubtitleMobile>
+
           <img className='bottle-bg' src='' alt='' />
           <img
             className='bottle-img'
-            src='https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Glacier_OK.png?v=7185877315400411030'
+            src='https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/bottle_beach.png?v=11784267851598469514'
           />
         </Card>
         <AiOutlineArrowRight />
       </Center>
-      <MobileContainer>
-        <MainSubtitleMobile>3 / 4</MainSubtitleMobile>
-      </MobileContainer>
-      <MainSubtitle>3 / 4</MainSubtitle>
+
+      <MainSubtitleMobile>1 / 4</MainSubtitleMobile>
+
+      <MainSubtitle>1 / 4</MainSubtitle>
+
+      <MainTitleMobile>Stuff</MainTitleMobile>
+      <MainHeaderMobile>Digital</MainHeaderMobile>
     </Main>
   );
 }
@@ -73,6 +90,29 @@ const MainHeader = styled.h3`
   font-size: 14px;
   letter-spacing: 4px;
   font-weight: 600;
+
+  @media screen and (max-width: 930px) {
+    display: none;
+  }
+`;
+
+const ProductTitle = styled.h3`
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-weight: 600;
+`;
+
+const MainHeaderMobile = styled.h3`
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  display: none;
+
+  @media screen and (max-width: 930px) {
+    display: block;
+  }
 `;
 
 const MainTitle = styled.h1`
@@ -80,6 +120,22 @@ const MainTitle = styled.h1`
   font-size: 100px;
   font-weight: 400;
   line-height: 1em;
+
+  @media screen and (max-width: 930px) {
+    display: none;
+  }
+`;
+
+const MainTitleMobile = styled.h1`
+  font-family: var(--italic-font);
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 0.7em;
+  display: none;
+
+  @media screen and (max-width: 930px) {
+    display: block;
+  }
 `;
 
 const MainSubtitle = styled.h2`
@@ -90,15 +146,21 @@ const MainSubtitle = styled.h2`
   right: 20px;
   bottom: 5px;
   text-align: center;
+
+  @media screen and (max-width: 930px) {
+    display: none;
+  }
 `;
 
 const MainContent = styled.div`
-  margin-left: 2rem;
+  margin: 2rem;
+  margin-left: 5rem;
   .more-menu {
     font-size: 13px;
     font-weight: 500;
     display: flex;
     align-items: center;
+    margin-left: 1rem;
   }
   @media screen and (max-width: 930px) {
     .more-menu {
@@ -124,16 +186,6 @@ const MainContentTitle = styled.div`
   }
 `;
 
-const MobileContainer = styled.div`
-  display: none;
-
-  @media screen and (max-width: 930px) {
-    display: flex;
-    width: 70%;
-    justify-content: flex-end;
-  }
-`;
-
 const MainSubtitleMobile = styled.h2`
   font-family: var(--italic-font);
   font-weight: 400;
@@ -142,6 +194,10 @@ const MainSubtitleMobile = styled.h2`
 
   @media screen and (max-width: 930px) {
     display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    text-align: center;
   }
 `;
 
@@ -150,6 +206,21 @@ const MainContentSubtitle = styled.div`
   line-height: 1.5;
   margin-bottom: 24px;
   letter-spacing: -0.01em;
+
+  @media screen and (max-width: 930px) {
+    display: none;
+  }
+`;
+const MainContentSubtitleMobile = styled.div`
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+  display: none;
+
+  @media screen and (max-width: 930px) {
+    display: block;
+  }
 `;
 
 const Center = styled.div`
@@ -204,6 +275,7 @@ const LeftSide = styled.div`
 const Card = styled.section`
   position: relative;
   padding: 1rem;
+
   width: 350px;
   height: 450px;
   box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
@@ -211,5 +283,10 @@ const Card = styled.section`
   background-color: var(--bg-beach);
   color: var(--text);
   cursor: pointer;
-  margin: 1rem;
+  margin: 2rem;
+
+  @media screen and (max-width: 930px) {
+    width: 300px;
+    height: 400px;
+  }
 `;
