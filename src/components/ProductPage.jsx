@@ -24,7 +24,7 @@ export default function ProductPage({ product }) {
       <Center>
         <AiOutlineArrowLeft />
         <Card id={name}>
-          <ProductTitle>{capitalize(name)}</ProductTitle>
+          <ProductTitle>{name.toUpperCase()}</ProductTitle>
           <hr />
           <CardText>
             Lorem pollution dolor sit amet, disposable sadipscing elitr, sed

@@ -175,7 +175,7 @@ const MainContent = styled.div`
 `;
 
 const MainContentTitle = styled.div`
-  font-size: 26px;
+  font-size: 21px;
   font-family: var(--italic-font);
   font-style: italic;
   margin-bottom: 14px;

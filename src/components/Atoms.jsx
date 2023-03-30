@@ -7,9 +7,9 @@ export default function AtomsPage() {
     <Wrapper>
       <LeftSide>
         <Content>
+          <br />
           <Header>Plastic</Header>
           <MainTitle>Stuff</MainTitle>
-
           <HeroText>
             It takes 500 years for our plastic bottles to decompose.
           </HeroText>
@@ -172,7 +172,7 @@ const Content = styled.div`
 `;
 
 const HeroText = styled.div`
-  font-size: 26px;
+  font-size: 21px;
   font-family: var(--italic-font);
   font-style: italic;
   margin-bottom: 14px;
