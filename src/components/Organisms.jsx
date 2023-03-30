@@ -9,7 +9,7 @@ export default function Organisms() {
         <MainContent>
           <br />
 
-          <MainHeader>Digital</MainHeader>
+          <MainHeader>Plastic</MainHeader>
           <MainTitle>Stuff</MainTitle>
 
           <MainContentTitle>
@@ -66,7 +66,7 @@ export default function Organisms() {
       <MainSubtitle>1 / 4</MainSubtitle>
 
       <MainTitleMobile>Stuff</MainTitleMobile>
-      <MainHeaderMobile>Digital</MainHeaderMobile>
+      <MainHeaderMobile>Plastic</MainHeaderMobile>
     </Main>
   );
 }

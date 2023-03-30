@@ -5,7 +5,7 @@ import { FaHamburger } from 'react-icons/fa';
 import CartIcon from '../assets/CartIcon';
 import ProfileIcon from '../assets/ProfileIcon';
 import SearchIcon from '../assets/SearchIcon';
-import { useLocation, useMatch } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const links = [
   { path: '/', text: 'atoms' },
@@ -13,6 +13,7 @@ const links = [
   { path: '/organisms', text: 'organisms' },
   { path: '/ecosystems', text: 'ecosystems' },
   { path: '/products', text: 'products' },
+  { path: '/shop', text: 'shop' },
 ];
 export default function Navigation() {
   const { pathname } = useLocation();

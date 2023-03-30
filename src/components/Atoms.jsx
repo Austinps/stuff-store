@@ -2,55 +2,53 @@ import styled from 'styled-components';
 import ArrowIcon from '../assets/ArrowIcon';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 
-export default function Atoms() {
+export default function AtomsPage() {
   return (
-    <Main>
+    <Wrapper>
       <LeftSide>
-        <MainContent>
-          <br />
-
-          <MainHeader>Digital</MainHeader>
+        <Content>
+          <Header>Plastic</Header>
           <MainTitle>Stuff</MainTitle>
 
-          <MainContentTitle>
+          <HeroText>
             It takes 500 years for our plastic bottles to decompose.
-          </MainContentTitle>
+          </HeroText>
           <div className='more-menu'>
             Shop Now
             <ArrowIcon />
           </div>
-        </MainContent>
+        </Content>
       </LeftSide>
       <Center>
         <AiOutlineArrowLeft />
         <Card id='atoms'>
           <ProductTitle>Atoms</ProductTitle>
           <hr />
-          <MainContentSubtitle>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-            tempor invidunt labore dolore magna aliquyam erat, sed diam sanctus
-            est voluptua.
-          </MainContentSubtitle>
-          <MainContentSubtitleMobile>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est sit amet.
-          </MainContentSubtitleMobile>
+          <CardText>
+            Lorem pollution dolor sit amet, disposable sadipscing elitr, sed
+            diam nonumy eirmod toxic invidunt ut garbage et dolore landfill
+            aliquyam erat, sed diam non-biodegradable. At vero plastic pollution
+            et accusam et justo duo dolores et ea microplastics. Stet clita kasd
+            gubergren, no sea takimata overconsumption est Lorem plastic bags
+            dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut plastic packaging
+            et dolore plastic waste erat, sed diam harmful. At vero eos et
+            accusam et justo duo dolores et ea single-use. Stet clita kasd
+            gubergren, no sea takimata environmental plastic debris. Lorem ipsum
+            dolor sit amet, harmful sadipscing elitr, sed eirmod tempor invidunt
+            plastic straws dolore magnadegradation.
+          </CardText>
+          <CardTextMobile>
+            Lorem ipsum dolor amet, toxic sadipscing elitr eirmod plastic
+            pollution invidunt ut landfill waste , sed diam non-biodegradable.
+            At vero plastic oceans et accusam et justo duo microplastics et ea
+            plastic bottles. Stet clita kasd gubergren overconsumption est Lorem
+            plastic bags plastic packaging et dolore plastic debris erat, sed
+            diam harmful. At vero eos et accusam et justo duo dolores et ea
+            plastic straws. Stet est environmental degradation. Lorem ipsum
+            dolor sit amet, harmful sadipscing elitr, plastic pollution
+            single-use erat, sed diam non-recyclable.
+          </CardTextMobile>
 
           <img className='bottle-bg' src='' alt='' />
           <img
@@ -61,17 +59,16 @@ export default function Atoms() {
         <AiOutlineArrowRight />
       </Center>
 
-      <MainSubtitleMobile>1 / 4</MainSubtitleMobile>
-
-      <MainSubtitle>1 / 4</MainSubtitle>
+      <PageCountMobile>1 / 4</PageCountMobile>
+      <PageCountDesktop>1 / 4</PageCountDesktop>
 
       <MainTitleMobile>Stuff</MainTitleMobile>
-      <MainHeaderMobile>Digital</MainHeaderMobile>
-    </Main>
+      <HeaderMobile>Plastic</HeaderMobile>
+    </Wrapper>
   );
 }
 
-const Main = styled.main`
+const Wrapper = styled.main`
   padding: 42px 0 30px;
   display: flex;
   flex-grow: 1;
@@ -85,7 +82,7 @@ const Main = styled.main`
   }
 `;
 
-const MainHeader = styled.h3`
+const Header = styled.h3`
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 4px;
@@ -103,7 +100,7 @@ const ProductTitle = styled.h3`
   font-weight: 600;
 `;
 
-const MainHeaderMobile = styled.h3`
+const HeaderMobile = styled.h3`
   text-transform: uppercase;
   font-size: 8px;
   letter-spacing: 4px;
@@ -138,7 +135,7 @@ const MainTitleMobile = styled.h1`
   }
 `;
 
-const MainSubtitle = styled.h2`
+const PageCountDesktop = styled.h2`
   font-family: var(--italic-font);
   font-weight: 400;
   font-size: 20px;
@@ -152,7 +149,7 @@ const MainSubtitle = styled.h2`
   }
 `;
 
-const MainContent = styled.div`
+const Content = styled.div`
   margin: 2rem;
   margin-left: 5rem;
   .more-menu {
@@ -174,7 +171,7 @@ const MainContent = styled.div`
   }
 `;
 
-const MainContentTitle = styled.div`
+const HeroText = styled.div`
   font-size: 26px;
   font-family: var(--italic-font);
   font-style: italic;
@@ -186,7 +183,7 @@ const MainContentTitle = styled.div`
   }
 `;
 
-const MainSubtitleMobile = styled.h2`
+const PageCountMobile = styled.h2`
   font-family: var(--italic-font);
   font-weight: 400;
   font-size: 15px;
@@ -201,7 +198,7 @@ const MainSubtitleMobile = styled.h2`
   }
 `;
 
-const MainContentSubtitle = styled.div`
+const CardText = styled.div`
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 24px;
@@ -211,7 +208,7 @@ const MainContentSubtitle = styled.div`
     display: none;
   }
 `;
-const MainContentSubtitleMobile = styled.div`
+const CardTextMobile = styled.div`
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 24px;
