@@ -12,9 +12,7 @@ export default function AtomsPage() {
           <br />
           <Header>Plastic</Header>
           <MainTitle>Stuff</MainTitle>
-          <HeroText>
-            It takes 500 years for our plastic bottles to decompose.
-          </HeroText>
+          <HeroText>We guarantee our bottles for 500 years.</HeroText>
           <div className='more-menu'>
             Shop Now
             <ArrowIcon />
@@ -168,7 +166,6 @@ const MainTitleMobile = styled.h1`
 `;
 
 const PageCountDesktop = styled.h2`
-  font-family: var(--italic-font);
   font-weight: 400;
   font-size: 20px;
   position: absolute;
@@ -186,8 +183,8 @@ const ScrollIconDesktop = styled.h2`
   font-weight: 400;
   font-size: 20px;
   position: fixed;
-  bottom: 320px;
-  left: 315px;
+  bottom: 20px;
+  left: 32 5px;
   padding: 20px;
 
   @media screen and (max-width: 768px) {
@@ -219,18 +216,17 @@ const Content = styled.div`
 
 const HeroText = styled.div`
   font-size: 21px;
+  font-family: var(--italic-font);
 
-  font-style: italic;
   margin-bottom: 14px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 930px) {
     margin-top: 1rem;
   }
 `;
 
 const PageCountMobile = styled.h2`
-  font-family: var(--italic-font);
   font-weight: 400;
   font-size: 15px;
   display: none;
@@ -239,7 +235,7 @@ const PageCountMobile = styled.h2`
     display: block;
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 20px;
     text-align: center;
   }
 `;
