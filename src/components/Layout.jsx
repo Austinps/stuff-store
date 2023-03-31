@@ -13,10 +13,10 @@ export default function Layout({ children }) {
 }
 
 const Container = styled.div`
-  max-width: 1100px;
+  // max-width: 1100px;
   border-radius: 4px;
-  max-height: 680px;
-  height: 90vh;
+  // max-height: 680px;
+  // height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
