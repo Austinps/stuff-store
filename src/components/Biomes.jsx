@@ -12,7 +12,7 @@ export default function BiomesPage() {
           <br />
           <Header>Plastic</Header>
           <MainTitle>Stuff</MainTitle>
-          <HeroText>We guarantee our bottles for 500 years.</HeroText>
+          <HeroText>Join the race to the bottom!</HeroText>
           <div className='more-menu'>
             Shop Now
             <ArrowIcon />
@@ -215,7 +215,7 @@ const Content = styled.div`
 `;
 
 const HeroText = styled.div`
-  font-size: 21px;
+  font-size: 19px;
   font-family: var(--italic-font);
 
   margin-bottom: 14px;

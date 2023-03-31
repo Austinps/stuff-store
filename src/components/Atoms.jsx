@@ -213,7 +213,7 @@ const Content = styled.div`
 `;
 
 const HeroText = styled.div`
-  font-size: 21px;
+  font-size: 19px;
   font-family: var(--italic-font);
 
   margin-bottom: 14px;
