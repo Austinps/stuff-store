@@ -3,6 +3,7 @@ import ArrowIcon from '../assets/ArrowIcon';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import { CgScrollV } from 'react-icons/cg';
 import { MdAddShoppingCart } from 'react-icons/md';
+v
 
 export default function AtomsPage() {
   return (
@@ -57,7 +58,7 @@ export default function AtomsPage() {
           </CardTextMobile>
 
           <img className='bottle-bg' src='' alt='' />
-          <img className='bottle-img' src='../../public/atoms.webp' />
+          <img className='bottle-img' src={img} />
         </Card>
         <AiOutlineArrowRight />
       </Center>
