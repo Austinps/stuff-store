@@ -3,9 +3,9 @@ import ArrowIcon from '../assets/ArrowIcon';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import { CgScrollV } from 'react-icons/cg';
 import { MdAddShoppingCart } from 'react-icons/md';
-import img from '../assets/biomes.webp';
+import img from '../assets/ecosystems.webp';
 
-export default function BiomesPage() {
+export default function EcosystemsPage() {
   return (
     <Wrapper>
       <LeftSide>
@@ -22,10 +22,10 @@ export default function BiomesPage() {
       </LeftSide>
       <Center>
         <AiOutlineArrowLeft />
-        <Card id='biomes'>
+        <Card id='ecosystems'>
           <ProductTitle>
             <div>
-              Biomes<ProductPrice>€39.999</ProductPrice>
+              Ecosystems<ProductPrice>€39.999</ProductPrice>
             </div>
             <MdAddShoppingCart size='1.25rem' />
           </ProductTitle>
@@ -124,8 +124,6 @@ const ProductPrice = styled.h3`
   font-size: 10px;
   letter-spacing: 4px;
   font-weight: 600;
-
-  overflow: hidden;
 `;
 
 const HeaderMobile = styled.h3`

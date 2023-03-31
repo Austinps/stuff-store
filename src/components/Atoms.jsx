@@ -13,7 +13,7 @@ export default function AtomsPage() {
           <br />
           <Header>Plastic</Header>
           <MainTitle>Stuff</MainTitle>
-          <HeroText>500 years of service, that's our guarantee.</HeroText>
+          <HeroText>500 years to biodegrade, that's our guarantee.</HeroText>
           <div className='more-menu'>
             Shop Now
             <ArrowIcon />
@@ -25,9 +25,12 @@ export default function AtomsPage() {
         <Card id='atoms'>
           <ProductTitle>
             <div>
-              Atoms<ProductPrice>€39.999</ProductPrice>
+              Atoms
+              <ProductPrice>
+                €39<CentPrice>.999</CentPrice>
+              </ProductPrice>
             </div>
-            <MdAddShoppingCart size='1.25rem' />
+            <MdAddShoppingCart size='1.5rem' />
           </ProductTitle>
 
           <hr />
@@ -125,9 +128,19 @@ const ProductPrice = styled.h3`
   letter-spacing: 4px;
   font-weight: 600;
 
-  overflow: hidden;
-`;
 
+`;
+const CentPrice = styled.h3`
+  text-transform: uppercase;
+  // background-color: var(--organisms-bg);
+  padding: 5px 0;
+  border-radius: 2px;
+  font-size: 7px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  display: inline;
+
+`;
 const HeaderMobile = styled.h3`
   text-transform: uppercase;
   font-size: 8px;
@@ -238,7 +251,7 @@ const PageCountMobile = styled.h2`
 
 const CardText = styled.div`
   font-size: 14px;
-  opacity: 40%;
+  opacity: 30%;
   line-height: 1.5;
   margin-bottom: 24px;
   letter-spacing: -0.01em;

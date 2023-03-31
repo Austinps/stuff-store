@@ -23,9 +23,6 @@ const Container = styled.div`
   scroll-behavior: smooth;
   background-color: var(--bg-color);
   padding: 0 30px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  position: relative;
 
   @media (max-width: 480px) {
     .container {

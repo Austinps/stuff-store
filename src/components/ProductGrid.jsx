@@ -35,11 +35,11 @@ const products = [
       'Introducing the indestructible organism!. Accidentally created in a lab, it defies environmental pressures. Let this evolutionary wonder reign supreme!',
   },
   {
-    name: 'biomes',
+    name: 'ecosystems',
     fullname: 'Biome Shift',
     image:
       'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/savanna_OK.png?v=4783820813181844557',
-    uid: 'biomes',
+    uid: 'ecosystems',
     price: 59,
     tag: 'Step aside, Mother Nature!',
     description:

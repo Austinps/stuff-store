@@ -5,7 +5,7 @@
 :root {
   --body-color: #2c2d2a;
   --bg-color: #e6decf;
-  --biomes-bg: #e0c5a4;
+  --ecosystems-bg: #e0c5a4;
   --atoms-bg: #e6dac4;
   --molecules-bg: #c6d4ce;
   --organisms-bg: #e7aba5;
@@ -59,10 +59,11 @@ body {
   background-color: var(--organisms-bg);
 }
 
-#biomes {
-  background-color: var(--biomes-bg);
+#ecosystems {
+  background-color: var(--ecosystems-bg);
 }
 
 .active {
   text-decoration: underline;
+  text-transform: uppercase;
 }

@@ -124,8 +124,6 @@ const ProductPrice = styled.h3`
   font-size: 10px;
   letter-spacing: 4px;
   font-weight: 600;
-
-  overflow: hidden;
 `;
 
 const HeaderMobile = styled.h3`
