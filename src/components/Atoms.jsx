@@ -185,10 +185,10 @@ const ScrollIconDesktop = styled.h2`
   font-family: var(--italic-font);
   font-weight: 400;
   font-size: 20px;
-  position: absolute;
-  left: 20px;
-  bottom: 5px;
-  text-align: center;
+  position: fixed;
+  bottom: 320px;
+  left: 315px;
+  padding: 20px;
 
   @media screen and (max-width: 768px) {
     display: none;
