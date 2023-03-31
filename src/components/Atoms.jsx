@@ -24,7 +24,7 @@ export default function AtomsPage() {
         <Card id='atoms'>
           <ProductTitle>
             <div>
-              Atoms<ProductPrice>€39</ProductPrice>
+              Atoms<ProductPrice>€39.999</ProductPrice>
             </div>
             <MdAddShoppingCart size='1.25rem' />
           </ProductTitle>
@@ -167,7 +167,7 @@ const MainTitleMobile = styled.h1`
 
 const PageCountDesktop = styled.h2`
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   position: absolute;
   right: 20px;
   bottom: 5px;
@@ -182,10 +182,8 @@ const ScrollIconDesktop = styled.h2`
   font-family: var(--italic-font);
   font-weight: 400;
   font-size: 20px;
-  position: fixed;
-  bottom: 20px;
-  left: 32 5px;
-  padding: 20px;
+  position: absolute;
+  bottom: 0;
 
   @media screen and (max-width: 768px) {
     display: none;

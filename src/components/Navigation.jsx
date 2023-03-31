@@ -12,8 +12,7 @@ const links = [
   { path: '/molecules', text: 'molecules' },
   { path: '/organisms', text: 'organisms' },
   { path: '/biomes', text: 'biomes' },
-  { path: '/products', text: 'products' },
-  { path: '/shop', text: 'shop' },
+  // { path: '/products', text: 'products' },
 ];
 export default function Navigation() {
   const { pathname } = useLocation();

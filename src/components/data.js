@@ -1,4 +1,3 @@
-import ProductPage from './ProductPage';
 const products = [
   {
     name: 'atoms',
@@ -25,13 +24,3 @@ const products = [
     page: 4,
   },
 ];
-
-export default function Shop() {
-  return (
-    <>
-      {products?.map((item, index) => {
-        return <ProductPage product={item} key={index} />;
-      })}
-    </>
-  );
-}

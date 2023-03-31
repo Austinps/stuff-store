@@ -4,7 +4,7 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 
 export default function ProductPage({ product }) {
   const { name, image, page } = product;
-  const capitalize = (str) => str[0].toUpperCase() + str.slice(1);
+
   return (
     <Wrapper>
       <LeftSide>
