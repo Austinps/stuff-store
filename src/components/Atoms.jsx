@@ -62,10 +62,13 @@ export default function AtomsPage() {
 
           <img className='bottle-bg' src='' alt='' />
           <img className='bottle-img' src={img} />
+          <PageCountMobile>
+            <AiOutlineArrowLeft />
+            1 / 4<AiOutlineArrowRight />
+          </PageCountMobile>
         </Card>
         <AiOutlineArrowRight />
       </Center>
-      <PageCountMobile>1 / 4</PageCountMobile>
       <PageCountDesktop>1 / 4</PageCountDesktop>
       <MainTitleMobile>Stuff</MainTitleMobile>
       <HeaderMobile>Plastic</HeaderMobile>{' '}
@@ -185,6 +188,24 @@ const PageCountDesktop = styled.h2`
   }
 `;
 
+const PageCountMobile = styled.h2`
+  font-weight: 400;
+  font-size: 15px;
+  display: none;
+
+  @media screen and (max-width: 940px) {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 7rem;
+
+    bottom: -100px;
+    right: 25%;
+  }
+`;
+
 const ScrollIconDesktop = styled.h2`
   font-family: var(--italic-font);
   font-weight: 400;
@@ -228,20 +249,6 @@ const HeroText = styled.div`
 
   @media screen and (max-width: 940px) {
     margin-top: 1rem;
-  }
-`;
-
-const PageCountMobile = styled.h2`
-  font-weight: 400;
-  font-size: 15px;
-  display: none;
-
-  @media screen and (max-width: 940px) {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    text-align: center;
   }
 `;
 
