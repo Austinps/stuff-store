@@ -28,7 +28,7 @@ export default function Navigation() {
       <HeaderMenu>
         {links?.map((item) => (
           <NavLink
-            style={{ width: '5rem' }}
+            style={{ width: '8rem' }}
             to={item.path}
             activeClassName='active'
           >

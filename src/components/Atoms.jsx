@@ -57,10 +57,7 @@ export default function AtomsPage() {
           </CardTextMobile>
 
           <img className='bottle-bg' src='' alt='' />
-          <img
-            className='bottle-img'
-            src='https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/bottle_beach.png?v=11784267851598469514'
-          />
+          <img className='bottle-img' src='../../public/atoms.webp' />
         </Card>
         <AiOutlineArrowRight />
       </Center>
