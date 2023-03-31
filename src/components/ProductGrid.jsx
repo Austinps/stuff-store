@@ -2,24 +2,48 @@ import styled from 'styled-components';
 import ProductCard from './ProductCard';
 const products = [
   {
-    name: 'Atoms',
+    name: 'atoms',
+    fullname: 'Atomic Harvest',
     image:
       'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/bottle_beach.png?v=11784267851598469514',
+    uid: 'atoms',
+    price: '39',
+    tag: 'Behold the miracle of Atomic Harvest!',
+    description:
+      'Behold the miracle of the Atomic Harvest! Outlast civilization with some indestructible debris. Buy today and add your contribution to the heap!',
   },
   {
-    name: 'Molecules',
+    name: 'molecules',
+    fullname: 'Molecular Overhaul',
     image:
       'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Glacier_OK.png?v=7185877315400411030',
+    uid: 'molecules',
+    price: '44',
+    tag: 'Join the race to the bottom!',
+    description:
+      'Harvested direct from the ocean floor, Molecular Overhaul transforms the world around you. Join the race to the bottom!',
   },
   {
-    name: 'Organisms',
+    name: 'organisms',
+    fullname: 'Organism Overdrive',
     image:
       'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Coral_OK.png?v=14596995446202437119',
+    uid: 'organisms',
+    price: '47',
+    tag: 'Introducing the indestructible organism!',
+    description:
+      'Introducing the indestructible organism!. Accidentally created in a lab, it defies environmental pressures. Let this evolutionary wonder reign supreme!',
   },
   {
-    name: 'Ecosystems',
+    name: 'biomes',
+    fullname: 'Biome Shift',
     image:
       'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/savanna_OK.png?v=4783820813181844557',
+    uid: 'biomes',
+    price: 59,
+    tag: 'Step aside, Mother Nature!',
+    description:
+      "Step aside, Mother Nature! \nThe ultimate survivor is here to upend the natural order. Don't settle for outdated ecosystems. Order now and join the revolution!",
   },
 ];
 export default function ProductGrid() {
@@ -28,124 +52,6 @@ export default function ProductGrid() {
       {products.map((item, index) => {
         return <ProductCard key={index} product={item} />;
       })}
-
-      {/* <Card id='beach'>
-        <ProductInfo>
-          <h2>Beach</h2>
-        </ProductInfo>
-        <ButtonContainer>
-          <Button className='fav'>
-            <svg
-              className='svg'
-              id='i-star'
-              xmlns='http://www.w3.org/2000/svg'
-              viewBox='0 0 32 32'
-              stroke='#000'
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              stroke-width='2'
-            >
-              <path d='M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z' />
-            </svg>
-          </Button>
-        </ButtonContainer>
-        <MainSubtitle>€ 39.90</MainSubtitle>
-        <ProductImage>
-          <img
-            src='https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/bottle_beach.png?v=11784267851598469514'
-            alt='OFF-white Red Edition'
-            draggable='false'
-          />
-        </ProductImage>
-      </Card>
-      <Card id='coral'>
-        <ProductInfo>
-          <h2>Coral</h2>
-        </ProductInfo>
-        <ButtonContainer>
-          <Button className='fav'>
-            <svg
-              className='svg'
-              id='i-star'
-              xmlns='http://www.w3.org/2000/svg'
-              viewBox='0 0 32 32'
-              stroke='#000'
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              stroke-width='2'
-            >
-              <path d='M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z' />
-            </svg>
-          </Button>
-        </ButtonContainer>
-        <ProductImage>
-          <img
-            src='https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Coral_OK.png?v=14596995446202437119'
-            draggable='false'
-          />
-        </ProductImage>
-        <Button className='buy-btn'>Buy Now</Button>
-      </Card>
-      <Card id='glacier'>
-        <ProductInfo>
-          <h2>Glacier</h2>
-          <div className='price'>€39.99</div>
-        </ProductInfo>
-        <ButtonContainer>
-          <Button className='buy-btn'>Buy Now</Button>
-          <Button className='fav'>
-            <svg
-              className='svg'
-              id='i-star'
-              xmlns='http://www.w3.org/2000/svg'
-              viewBox='0 0 32 32'
-              stroke='#000'
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              stroke-width='2'
-            >
-              <path d='M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z' />
-            </svg>
-          </Button>
-        </ButtonContainer>
-        <ProductImage>
-          <img
-            src='https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Glacier_OK.png?v=7185877315400411030'
-            alt='OFF-white Red Edition'
-            draggable='false'
-          />
-        </ProductImage>
-      </Card>
-      <Card id='savanna'>
-        <ProductInfo>
-          <h2>Savanna</h2>
-          <div className='price'>€39.99</div>
-        </ProductInfo>
-        <ButtonContainer>
-          <Button className='buy-btn'>Buy Now</Button>
-          <Button className='fav'>
-            <svg
-              className='svg'
-              id='i-star'
-              xmlns='http://www.w3.org/2000/svg'
-              viewBox='0 0 32 32'
-              stroke='#000'
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              stroke-width='2'
-            >
-              <path d='M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z' />
-            </svg>
-          </Button>
-        </ButtonContainer>
-        <ProductImage>
-          <img
-            src='https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/savanna_OK.png?v=4783820813181844557'
-            alt='OFF-white Red Edition'
-            draggable='false'
-          />
-        </ProductImage>
-      </Card> */}
     </Container>
   );
 }
@@ -153,7 +59,7 @@ export default function ProductGrid() {
 const Container = styled.main`
   height: 100%;
   width: 850px;
-  margin: auto;
+  margin: 1rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

@@ -202,6 +202,7 @@ const MainSubtitleMobile = styled.h2`
 `;
 
 const MainContentSubtitle = styled.div`
+  opacity: 50%;
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 24px;
@@ -212,6 +213,7 @@ const MainContentSubtitle = styled.div`
   }
 `;
 const MainContentSubtitleMobile = styled.div`
+  opacity: 50%;
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 24px;

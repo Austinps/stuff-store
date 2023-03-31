@@ -11,7 +11,7 @@ const links = [
   { path: '/', text: 'atoms' },
   { path: '/molecules', text: 'molecules' },
   { path: '/organisms', text: 'organisms' },
-  { path: '/ecosystems', text: 'ecosystems' },
+  { path: '/biomes', text: 'biomes' },
   { path: '/products', text: 'products' },
   { path: '/shop', text: 'shop' },
 ];
@@ -62,7 +62,7 @@ const Header = styled.div`
   left: 0;
   z-index: 6;
 
-  @media (max-width: 575px) {
+  @media (max-width: 768px) {
     .header {
       width: calc(100% + 20px);
       margin-left: -10px;
@@ -71,7 +71,7 @@ const Header = styled.div`
 `;
 
 const HeaderMenu = styled.div`
-  width: 900px;
+  width: 575px;
   display: flex;
   justify-content: center;
   @media screen and (max-width: 740px) {
@@ -115,7 +115,7 @@ const MainTitle = styled.h1`
 const HamburgerBox = styled.div`
   display: none;
 
-  @media screen and (max-width: 740px) {
+  @media screen and (max-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -19,7 +19,7 @@ const products = [
     page: 3,
   },
   {
-    name: 'ecosystems',
+    name: 'biomes',
     image:
       'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/savanna_OK.png?v=4783820813181844557',
     page: 4,

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import ArrowIcon from '../assets/ArrowIcon';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 
-export default function Ecosystems() {
+export default function Biomes() {
   return (
     <Main>
       <LeftSide>
@@ -23,8 +23,8 @@ export default function Ecosystems() {
       </LeftSide>
       <Center>
         <AiOutlineArrowLeft />
-        <Card id='ecosystems'>
-          <ProductTitle>Ecosystems</ProductTitle>
+        <Card id='biomes'>
+          <ProductTitle>Biomes</ProductTitle>
           <hr />
           <MainContentSubtitle>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -202,6 +202,7 @@ const MainSubtitleMobile = styled.h2`
 `;
 
 const MainContentSubtitle = styled.div`
+  opacity: 85%;
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 24px;
@@ -212,6 +213,7 @@ const MainContentSubtitle = styled.div`
   }
 `;
 const MainContentSubtitleMobile = styled.div`
+  opacity: 85%;
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 24px;

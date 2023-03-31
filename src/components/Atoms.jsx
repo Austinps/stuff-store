@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import ArrowIcon from '../assets/ArrowIcon';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import { CgScrollV } from 'react-icons/cg';
+import { MdAddShoppingCart } from 'react-icons/md';
 
 export default function AtomsPage() {
   return (
@@ -22,7 +24,13 @@ export default function AtomsPage() {
       <Center>
         <AiOutlineArrowLeft />
         <Card id='atoms'>
-          <ProductTitle>Atoms</ProductTitle>
+          <ProductTitle>
+            <div>
+              Atoms<ProductPrice>€39</ProductPrice>
+            </div>
+            <MdAddShoppingCart size='1.25rem' />
+          </ProductTitle>
+
           <hr />
           <CardText>
             Lorem pollution dolor sit amet, disposable sadipscing elitr, sed
@@ -60,6 +68,9 @@ export default function AtomsPage() {
       </Center>
 
       <PageCountMobile>1 / 4</PageCountMobile>
+      <ScrollIconDesktop>
+        <CgScrollV />
+      </ScrollIconDesktop>
       <PageCountDesktop>1 / 4</PageCountDesktop>
 
       <MainTitleMobile>Stuff</MainTitleMobile>
@@ -75,7 +86,7 @@ const Wrapper = styled.main`
   position: relative;
   margin-bottom: 5rem;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
@@ -88,16 +99,37 @@ const Header = styled.h3`
   letter-spacing: 4px;
   font-weight: 600;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
 const ProductTitle = styled.h3`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 4px;
   font-weight: 600;
+  margin: 0 1rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+const ProductPrice = styled.h3`
+  text-transform: uppercase;
+  // background-color: var(--organisms-bg);
+  padding: 5px 20px 0 20px;
+  border-radius: 2px;
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 600;
+
+  overflow: hidden;
 `;
 
 const HeaderMobile = styled.h3`
@@ -107,7 +139,7 @@ const HeaderMobile = styled.h3`
   font-weight: 600;
   display: none;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     display: block;
   }
 `;
@@ -118,7 +150,7 @@ const MainTitle = styled.h1`
   font-weight: 400;
   line-height: 1em;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -130,7 +162,7 @@ const MainTitleMobile = styled.h1`
   line-height: 0.7em;
   display: none;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     display: block;
   }
 `;
@@ -144,7 +176,21 @@ const PageCountDesktop = styled.h2`
   bottom: 5px;
   text-align: center;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const ScrollIconDesktop = styled.h2`
+  font-family: var(--italic-font);
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+  left: 20px;
+  bottom: 5px;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -159,7 +205,7 @@ const Content = styled.div`
     align-items: center;
     margin-left: 1rem;
   }
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     .more-menu {
       justify-content: center;
     }
@@ -173,12 +219,12 @@ const Content = styled.div`
 
 const HeroText = styled.div`
   font-size: 21px;
-  font-family: var(--italic-font);
+
   font-style: italic;
   margin-bottom: 14px;
   margin-top: 2rem;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     margin-top: 1rem;
   }
 `;
@@ -189,7 +235,7 @@ const PageCountMobile = styled.h2`
   font-size: 15px;
   display: none;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
     right: 20px;
@@ -200,22 +246,24 @@ const PageCountMobile = styled.h2`
 
 const CardText = styled.div`
   font-size: 14px;
+  opacity: 40%;
   line-height: 1.5;
   margin-bottom: 24px;
   letter-spacing: -0.01em;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 const CardTextMobile = styled.div`
   font-size: 14px;
+  opacity: 30%;
   line-height: 1.5;
   margin-bottom: 24px;
   letter-spacing: -0.01em;
   display: none;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     display: block;
   }
 `;
@@ -227,7 +275,7 @@ const Center = styled.div`
   position: relative;
   flex-shrink: 0;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     margin-left: 0;
     margin-bottom: 56px;
   }
@@ -238,7 +286,7 @@ const Center = styled.div`
     border-radius: 160px;
     opacity: 0%;
   }
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     .bottle-bg {
       width: 260px;
       height: 390px;
@@ -261,9 +309,11 @@ const Center = styled.div`
 const LeftSide = styled.div`
   display: flex;
   flex-direction: column;
+  margin: Auto;
   justify-content: space-between;
   max-width: 320px;
-  @media screen and (max-width: 930px) {
+
+  @media screen and (max-width: 768px) {
     text-align: center;
     max-width: 450px;
   }
@@ -281,8 +331,12 @@ const Card = styled.section`
   color: var(--text);
   cursor: pointer;
   margin: 2rem;
+  margin-right: 5rem;
+  hr {
+    margin-bottom: 5px;
+  }
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 768px) {
     width: 300px;
     height: 400px;
   }
