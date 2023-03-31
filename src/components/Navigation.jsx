@@ -27,7 +27,7 @@ export default function Navigation() {
 
       <HeaderMenu>
         {links?.map((item) => (
-          <NavLink style={{ width: '8rem' }} to={item.path}>
+          <NavLink to={item.path}>
             {pathname === item.path ? capitalize(item.text) : item.text}
           </NavLink>
         ))}
@@ -47,7 +47,7 @@ export default function Navigation() {
 const Header = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: var(--bg-color);
   height: 72px;
   width: 100%;
@@ -72,7 +72,7 @@ const Header = styled.div`
 const HeaderMenu = styled.div`
   width: 575px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   @media screen and (max-width: 940px) {
     display: none;
   }
