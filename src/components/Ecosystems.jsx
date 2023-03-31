@@ -13,7 +13,7 @@ export default function EcosystemsPage() {
           <br />
           <Header>Plastic</Header>
           <MainTitle>Stuff</MainTitle>
-          <HeroText>500 years of service, that's our guarantee.</HeroText>
+          <HeroText> Upend the natural order!</HeroText>
           <div className='more-menu'>
             Shop Now
             <ArrowIcon />
@@ -25,52 +25,67 @@ export default function EcosystemsPage() {
         <Card id='ecosystems'>
           <ProductTitle>
             <div>
-              Ecosystems<ProductPrice>€39.999</ProductPrice>
+              Biome Shift
+              <ProductPrice>
+                €39<CentPrice>.999</CentPrice>
+              </ProductPrice>
             </div>
-            <MdAddShoppingCart size='1.25rem' />
+            <MdAddShoppingCart size='1.5rem' />
           </ProductTitle>
 
           <hr />
           <CardText>
-            Lorem pollution dolor sit amet, disposable sadipscing elitr, sed
-            diam nonumy eirmod toxic invidunt ut garbage et dolore landfill
-            aliquyam erat, sed diam non-biodegradable. At vero plastic pollution
-            et accusam et justo duo dolores et ea microplastics. Stet clita kasd
-            gubergren, no sea takimata overconsumption est Lorem plastic bags
-            dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-            elitr, sed diam nonumy eirmod tempor invidunt ut plastic packaging
-            et dolore plastic waste erat, sed diam harmful. At vero eos et
-            accusam et justo duo dolores et ea single-use. Stet clita kasd
-            gubergren, no sea takimata environmental plastic debris. Lorem ipsum
-            dolor sit amet, harmful sadipscing elitr, sed eirmod tempor invidunt
-            plastic straws dolore magnadegradation.
+            Lorem pollution dolor sit amet, disposable ut sadipscing elitr, sed
+            diam eos nonumy eirmod toxic invidunt garbage dolore landfill
+            plastic aliquyam erat, sed diam non-biodegradable. At vero plastic
+            pollution et accusam et justo duo dolores et ea microplastics. Stet
+            clita kasd gubergren, no sea takimata overconsumption est Lorem
+            plastic bags dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing sed elitr, sed diam nonumy eirmod tempor invidunt ut
+            plastic packaging et dolore plastic waste erat, sed diam harmful. At
+            vero eos et accusam et justo duo dolores et ea single-use. Stet
+            clita kasd gubergren, no sea takimata et environmental plastic
+            debris. Lorem ipsum dolor sit amet, harmful sadipscing elitr, sed
+            eirmod tempor invidunt plastic straws dolore magnadegradation. Lorem
+            pollution dolor sit amet, disposable sadipscing elitr, sed diam
+            nonumy eirmod toxic invidunt ut garbage et dolore landfill aliquyam
+            erat, sed diam non-biodegradable. At vero plastic pollution et
+            accusam et justo duo dolores et ea garbage microplastics. Stet clita
+            kasd gubergren, no sea takimata overconsumption est Lorem ut plastic
+            bags dolor sit amet overconsumption.
           </CardText>
           <CardTextMobile>
-            Lorem ipsum dolor amet, toxic sadipscing elitr eirmod plastic
-            pollution invidunt ut landfill waste , sed diam non-biodegradable.
-            At vero plastic oceans et accusam et justo duo microplastics et ea
-            plastic bottles. Stet clita kasd gubergren overconsumption est Lorem
-            plastic bags plastic packaging et dolore plastic debris erat, sed
-            diam harmful. At vero eos et accusam et justo duo dolores et ea
-            plastic straws. Stet est environmental degradation. Lorem ipsum
-            dolor sit amet, harmful sadipscing elitr, plastic pollution
-            single-use erat, sed diam non-recyclable.
+            Lorem ipsum dolore, toxic sadipscing eirmod plastic pollution
+            invidunt toxic landfill waste, non-biodegradable. Stet vero plastic
+            oceans et accusam et justo duo microplastics et ea plastic bottles.
+            Stet clita kasd et accusam gubergren microplastics overconsumption
+            est Lorem plastic bags plastic packaging et dolore plastic debris
+            erat, sed diam harmful. At vero eos amet accusam et justo duo
+            dolores et ea plastic straws. Stet est environmental degradation.
+            Lorem ipsum dolor sit amet, harmful elitr, plastic pollution
+            single-use erat. Lorem ipsum dolor amet sed diam, et toxic
+            sadipscing elitr eirmod plastic sed pollution invidunt ut landfill
+            waste, sed diam et non-biodegradable. At vero plastic oceans et
+            accusam et justo duo microplastics et ea plastic bottles. Stet
+            gubergren overconsumption toxic Lorem plastic bags plastic packaging
+            et justo dolore plastic debris harmful.
           </CardTextMobile>
 
           <img className='bottle-bg' src='' alt='' />
           <img className='bottle-img' src={img} />
+          <PageCountMobile>
+            <AiOutlineArrowLeft />
+            1 / 4<AiOutlineArrowRight />
+          </PageCountMobile>
         </Card>
         <AiOutlineArrowRight />
       </Center>
-
-      <PageCountMobile>1 / 4</PageCountMobile>
-      <ScrollIconDesktop>
-        <CgScrollV />
-      </ScrollIconDesktop>
       <PageCountDesktop>1 / 4</PageCountDesktop>
-
       <MainTitleMobile>Stuff</MainTitleMobile>
-      <HeaderMobile>Plastic</HeaderMobile>
+      <HeaderMobile>Plastic</HeaderMobile>{' '}
+      {/* <ScrollIconDesktop>
+        <CgScrollV />
+      </ScrollIconDesktop> */}
     </Wrapper>
   );
 }
@@ -82,10 +97,11 @@ const Wrapper = styled.main`
   position: relative;
   margin-bottom: 5rem;
 
-  @media screen and (max-width: 940px) {
+  @media screen and (max-width: 740px) {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    margin-top: 20rem;
   }
 `;
 
@@ -106,9 +122,10 @@ const ProductTitle = styled.h3`
   align-items: center;
   text-transform: uppercase;
   font-size: 14px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-weight: 600;
-  margin: 0 1rem;
+  margin: 0;
+  margin-right: 1rem;
 
   div {
     display: flex;
@@ -125,13 +142,25 @@ const ProductPrice = styled.h3`
   letter-spacing: 4px;
   font-weight: 600;
 `;
-
+const CentPrice = styled.h3`
+  text-transform: uppercase;
+  // background-color: var(--organisms-bg);
+  padding: 5px 0;
+  border-radius: 2px;
+  font-size: 7px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  display: inline;
+`;
 const HeaderMobile = styled.h3`
   text-transform: uppercase;
-  font-size: 8px;
+  font-size: 9px;
   letter-spacing: 4px;
   font-weight: 600;
   display: none;
+  position: absolute;
+  top: 25px;
+  left: 195px;
 
   @media screen and (max-width: 940px) {
     display: block;
@@ -174,6 +203,24 @@ const PageCountDesktop = styled.h2`
   }
 `;
 
+const PageCountMobile = styled.h2`
+  font-weight: 400;
+  font-size: 15px;
+  display: none;
+
+  @media screen and (max-width: 940px) {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 7rem;
+
+    bottom: -100px;
+    right: 25%;
+  }
+`;
+
 const ScrollIconDesktop = styled.h2`
   font-family: var(--italic-font);
   font-weight: 400;
@@ -194,7 +241,7 @@ const Content = styled.div`
     font-weight: 500;
     display: flex;
     align-items: center;
-    margin-left: 1rem;
+    // margin-left: 1rem;
   }
   @media screen and (max-width: 940px) {
     .more-menu {
@@ -209,7 +256,7 @@ const Content = styled.div`
 `;
 
 const HeroText = styled.div`
-  font-size: 19px;
+  font-size: 29px;
   font-family: var(--italic-font);
 
   margin-bottom: 14px;
@@ -220,24 +267,10 @@ const HeroText = styled.div`
   }
 `;
 
-const PageCountMobile = styled.h2`
-  font-weight: 400;
-  font-size: 15px;
-  display: none;
-
-  @media screen and (max-width: 940px) {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    text-align: center;
-  }
-`;
-
 const CardText = styled.div`
   font-size: 14px;
-  opacity: 40%;
-  line-height: 1.5;
+  opacity: 30%;
+  line-height: 1;
   margin-bottom: 24px;
   letter-spacing: -0.01em;
 
@@ -248,7 +281,7 @@ const CardText = styled.div`
 const CardTextMobile = styled.div`
   font-size: 14px;
   opacity: 30%;
-  line-height: 1.5;
+  line-height: 1;
   margin-bottom: 24px;
   letter-spacing: -0.01em;
   display: none;
@@ -299,7 +332,8 @@ const Center = styled.div`
 const LeftSide = styled.div`
   display: flex;
   flex-direction: column;
-  margin: Auto;
+  margin: auto;
+  margin-left: 2rem;
   justify-content: space-between;
   max-width: 320px;
 

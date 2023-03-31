@@ -19,7 +19,7 @@ const products = [
       'https://cdn.shopify.com/s/files/1/0689/1443/t/34/assets/Glacier_OK.png?v=7185877315400411030',
     uid: 'molecules',
     price: '44',
-    tag: 'Join the race to the bottom!',
+    tag: 'What has nature ever done for you? We deliver!',
     description:
       'Harvested direct from the ocean floor, Molecular Overhaul transforms the world around you. Join the race to the bottom!',
   },

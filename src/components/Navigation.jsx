@@ -8,10 +8,10 @@ import SearchIcon from '../assets/SearchIcon';
 import { useLocation } from 'react-router-dom';
 
 const links = [
-  { path: '/', text: 'atoms' },
-  { path: '/molecules', text: 'molecules' },
-  { path: '/organisms', text: 'organisms' },
-  { path: '/ecosystems', text: 'ecosystems' },
+  { path: '/', text: 'atom' },
+  { path: '/molecules', text: 'molecule' },
+  { path: '/organisms', text: 'organism' },
+  { path: '/ecosystems', text: 'ecosystem' },
 ];
 export default function Navigation() {
   const { pathname } = useLocation();
@@ -70,7 +70,7 @@ const Header = styled.div`
 
 const HeaderMenu = styled.div`
   // text-transform: uppercase;
-  width: 575px;
+  width: 455px;
   display: flex;
   justify-content: space-around;
   @media screen and (max-width: 940px) {
