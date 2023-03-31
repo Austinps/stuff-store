@@ -13,6 +13,11 @@ export default function OrganismsPage() {
           <Header>Plastic</Header>
           <MainTitle>Stuff</MainTitle>
           <HeroText>Wave goodbye to natural law!</HeroText>
+          <CardTextLeft>
+            ...and behold the miracle of the atomic harvest. Outlive
+            civilization with some of our immortal debris. Add your contribution
+            to the heap!
+          </CardTextLeft>
           <div className='more-menu'>
             Shop Now
             <ArrowIcon />
@@ -277,6 +282,18 @@ const CardText = styled.div`
     display: none;
   }
 `;
+const CardTextLeft = styled.div`
+  font-size: 14px;
+  opacity: 100%;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+
+  @media screen and (max-width: 940px) {
+    display: none;
+  }
+`;
+
 const CardTextMobile = styled.div`
   font-size: 14px;
   opacity: 30%;
