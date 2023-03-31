@@ -15,9 +15,8 @@ export default function EcosystemsPage() {
           <MainTitle>Stuff</MainTitle>
           <HeroText> Upend the natural order!</HeroText>
           <CardTextLeft>
-            ...and behold the miracle of the atomic harvest. Outlive
-            civilization with some of our immortal debris. Add your contribution
-            to the heap!
+            ...and behold the miracle of the atomic harvest. Add your
+            contribution to the heap!
           </CardTextLeft>
           <div className='more-menu'>
             Shop Now

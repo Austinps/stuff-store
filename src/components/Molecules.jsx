@@ -15,9 +15,8 @@ export default function MoleculesPage() {
           <MainTitle>Stuff</MainTitle>
           <HeroText>Join the race to the bottom!</HeroText>
           <CardTextLeft>
-            ...and behold the miracle of the atomic harvest. Outlive
-            civilization with some of our immortal debris. Add your contribution
-            to the heap!
+            ...and behold the miracle of the atomic harvest. Add your
+            contribution to the heap!
           </CardTextLeft>
           <div className='more-menu'>
             Shop Now
