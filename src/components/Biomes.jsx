@@ -65,11 +65,11 @@ export default function BiomesPage() {
         <AiOutlineArrowRight />
       </Center>
 
-      <PageCountMobile>3 / 4</PageCountMobile>
+      <PageCountMobile>4 / 4</PageCountMobile>
       <ScrollIconDesktop>
         <CgScrollV />
       </ScrollIconDesktop>
-      <PageCountDesktop>3 / 4</PageCountDesktop>
+      <PageCountDesktop>4 / 4</PageCountDesktop>
 
       <MainTitleMobile>Stuff</MainTitleMobile>
       <HeaderMobile>Plastic</HeaderMobile>
