@@ -74,7 +74,7 @@ const Wrapper = styled.main`
   position: relative;
   margin-bottom: 5rem;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
@@ -87,7 +87,7 @@ const Header = styled.h3`
   letter-spacing: 4px;
   font-weight: 600;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     display: none;
   }
 `;
@@ -106,7 +106,7 @@ const HeaderMobile = styled.h3`
   font-weight: 600;
   display: none;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     display: block;
   }
 `;
@@ -117,7 +117,7 @@ const MainTitle = styled.h1`
   font-weight: 400;
   line-height: 1em;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     display: none;
   }
 `;
@@ -129,7 +129,7 @@ const MainTitleMobile = styled.h1`
   line-height: 0.7em;
   display: none;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     display: block;
   }
 `;
@@ -143,7 +143,7 @@ const PageCountDesktop = styled.h2`
   bottom: 5px;
   text-align: center;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     display: none;
   }
 `;
@@ -159,7 +159,7 @@ const Content = styled.div`
     margin-left: 1rem;
     text-decoration: underline;
   }
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     .more-menu {
       justify-content: center;
     }
@@ -178,7 +178,7 @@ const HeroText = styled.div`
   margin-bottom: 14px;
   margin-top: 2rem;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     margin-top: 1rem;
   }
 `;
@@ -189,7 +189,7 @@ const PageCountMobile = styled.h2`
   font-size: 15px;
   display: none;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     display: block;
     position: absolute;
     right: 20px;
@@ -204,7 +204,7 @@ const CardText = styled.div`
   margin-bottom: 24px;
   letter-spacing: -0.01em;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     display: none;
   }
 `;
@@ -215,7 +215,7 @@ const CardTextMobile = styled.div`
   letter-spacing: -0.01em;
   display: none;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     display: block;
   }
 `;
@@ -227,7 +227,7 @@ const Center = styled.div`
   position: relative;
   flex-shrink: 0;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     margin-left: 0;
     margin-bottom: 56px;
   }
@@ -238,7 +238,7 @@ const Center = styled.div`
     border-radius: 160px;
     opacity: 0%;
   }
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     .bottle-bg {
       width: 260px;
       height: 390px;
@@ -263,7 +263,7 @@ const LeftSide = styled.div`
   flex-direction: column;
   justify-content: space-between;
   max-width: 320px;
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     text-align: center;
     max-width: 450px;
   }
@@ -282,7 +282,7 @@ const Card = styled.section`
   cursor: pointer;
   margin: 2rem;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     width: 300px;
     height: 400px;
   }

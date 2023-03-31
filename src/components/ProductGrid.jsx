@@ -65,7 +65,7 @@ const Container = styled.main`
   align-items: center;
   justify-content: space-evenly;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 940px) {
     padding: 2rem 0;
     width: 100%;
     flex-direction: column;

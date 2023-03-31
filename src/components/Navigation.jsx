@@ -27,7 +27,11 @@ export default function Navigation() {
 
       <HeaderMenu>
         {links?.map((item) => (
-          <NavLink to={item.path} activeClassName='active'>
+          <NavLink
+            style={{ width: '5rem' }}
+            to={item.path}
+            activeClassName='active'
+          >
             {pathname === item.path ? capitalize(item.text) : item.text}
           </NavLink>
         ))}
@@ -61,7 +65,7 @@ const Header = styled.div`
   left: 0;
   z-index: 6;
 
-  @media (max-width: 768px) {
+  @media (max-width: 940px) {
     .header {
       width: calc(100% + 20px);
       margin-left: -10px;
@@ -73,7 +77,7 @@ const HeaderMenu = styled.div`
   width: 575px;
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 740px) {
+  @media screen and (max-width: 940px) {
     display: none;
   }
   a:not(:first-child) {
@@ -114,7 +118,7 @@ const MainTitle = styled.h1`
 const HamburgerBox = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     display: flex;
     align-items: center;
     justify-content: center;

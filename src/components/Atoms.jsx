@@ -12,7 +12,7 @@ export default function AtomsPage() {
           <br />
           <Header>Plastic</Header>
           <MainTitle>Stuff</MainTitle>
-          <HeroText>We guarantee our bottles for 500 years.</HeroText>
+          <HeroText>500 years of service, that's our guarantee.</HeroText>
           <div className='more-menu'>
             Shop Now
             <ArrowIcon />
@@ -84,7 +84,7 @@ const Wrapper = styled.main`
   position: relative;
   margin-bottom: 5rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
@@ -97,7 +97,7 @@ const Header = styled.h3`
   letter-spacing: 4px;
   font-weight: 600;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     display: none;
   }
 `;
@@ -121,9 +121,9 @@ const ProductTitle = styled.h3`
 const ProductPrice = styled.h3`
   text-transform: uppercase;
   // background-color: var(--organisms-bg);
-  padding: 5px 20px 0 20px;
+  padding: 5px 0;
   border-radius: 2px;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 4px;
   font-weight: 600;
 
@@ -137,7 +137,7 @@ const HeaderMobile = styled.h3`
   font-weight: 600;
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     display: block;
   }
 `;
@@ -148,7 +148,7 @@ const MainTitle = styled.h1`
   font-weight: 400;
   line-height: 1em;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     display: none;
   }
 `;
@@ -160,7 +160,7 @@ const MainTitleMobile = styled.h1`
   line-height: 0.7em;
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     display: block;
   }
 `;
@@ -173,7 +173,7 @@ const PageCountDesktop = styled.h2`
   bottom: 5px;
   text-align: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     display: none;
   }
 `;
@@ -185,7 +185,7 @@ const ScrollIconDesktop = styled.h2`
   position: absolute;
   bottom: 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     display: none;
   }
 `;
@@ -200,7 +200,7 @@ const Content = styled.div`
     align-items: center;
     margin-left: 1rem;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     .more-menu {
       justify-content: center;
     }
@@ -219,7 +219,7 @@ const HeroText = styled.div`
   margin-bottom: 14px;
   margin-top: 1rem;
 
-  @media screen and (max-width: 930px) {
+  @media screen and (max-width: 940px) {
     margin-top: 1rem;
   }
 `;
@@ -229,7 +229,7 @@ const PageCountMobile = styled.h2`
   font-size: 15px;
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     display: block;
     position: absolute;
     right: 20px;
@@ -245,7 +245,7 @@ const CardText = styled.div`
   margin-bottom: 24px;
   letter-spacing: -0.01em;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     display: none;
   }
 `;
@@ -257,7 +257,7 @@ const CardTextMobile = styled.div`
   letter-spacing: -0.01em;
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     display: block;
   }
 `;
@@ -269,7 +269,7 @@ const Center = styled.div`
   position: relative;
   flex-shrink: 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     margin-left: 0;
     margin-bottom: 56px;
   }
@@ -280,13 +280,13 @@ const Center = styled.div`
     border-radius: 160px;
     opacity: 0%;
   }
-  @media screen and (max-width: 768px) {
-    .bottle-bg {
-      width: 260px;
-      height: 390px;
-    }
-  }
-  @media screen and (max-width: 575px) {
+  // @media screen and (max-width: 940px) {
+  //   .bottle-bg {
+  //     width: 260px;
+  //     height: 390px;
+  //   }
+  // }
+  @media screen and (max-width: 940px) {
     .bottle-bg {
       width: 220px;
       height: 340px;
@@ -307,7 +307,7 @@ const LeftSide = styled.div`
   justify-content: space-between;
   max-width: 320px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     text-align: center;
     max-width: 450px;
   }
@@ -330,7 +330,7 @@ const Card = styled.section`
     margin-bottom: 5px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 940px) {
     width: 300px;
     height: 400px;
   }
