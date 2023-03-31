@@ -104,7 +104,7 @@ const MainTitle = styled.h1`
   font-weight: 400;
   line-height: 1em;
   display: block;
-  font-size: 15px;
+  font-size: 18px;
   margin-left: 0.3rem;
 `;
 

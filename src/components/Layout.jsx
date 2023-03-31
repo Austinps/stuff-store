@@ -4,7 +4,7 @@ import Navigation from './Navigation';
 export default function Layout({ children }) {
   return (
     <>
-      <Container className='container'>
+      <Container>
         <Navigation />
         {children}
       </Container>

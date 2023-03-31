@@ -10,19 +10,17 @@ export default function OrganismsPage() {
       <LeftSide>
         <Content>
           <br />
-          <Header>Plastic</Header>
-          <MainTitle>Stuff</MainTitle>
-          <HeroText>
-            Join the race to the bottom!
-          </HeroText>
+          {/* <Header>Plastic</Header>
+          <MainTitle>Stuff</MainTitle> */}
+          <HeroText>Feed From The Bottom!</HeroText>
           <CardTextLeft>
             ...and behold the miracle of the atomic harvest. Add your
             contribution to the heap!
           </CardTextLeft>
-          <div className='more-menu'>
+          <button className='more-menu'>
             Shop Now
             <ArrowIcon />
-          </div>
+          </button>
         </Content>
       </LeftSide>
       <Center>
@@ -249,6 +247,9 @@ const Content = styled.div`
     font-weight: 500;
     display: flex;
     align-items: center;
+    background-color: var(--atoms-bg);
+    padding: 2px;
+    border: none;
     // margin-left: 1rem;
   }
   @media screen and (max-width: 940px) {
@@ -264,11 +265,10 @@ const Content = styled.div`
 `;
 
 const HeroText = styled.div`
-  font-size: 29px;
+  font-size: 60px;
   font-family: var(--italic-font);
 
-  margin-bottom: 14px;
-  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 
   @media screen and (max-width: 940px) {
     margin-top: 1rem;
@@ -290,7 +290,7 @@ const CardTextLeft = styled.div`
   font-size: 14px;
   opacity: 100%;
   line-height: 1.2;
-  margin-bottom: 24px;
+  margin-bottom: 0.5rem;
   letter-spacing: -0.01em;
 
   @media screen and (max-width: 940px) {
