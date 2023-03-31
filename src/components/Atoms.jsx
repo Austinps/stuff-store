@@ -16,7 +16,7 @@ export default function AtomsPage() {
           <HeroText> Step aside, Mother Nature!</HeroText>
           <CardTextLeft>
             ...and behold the miracle of the atomic harvest. Add your
-            contribution to the heap!
+            contribution to the pile!
           </CardTextLeft>
           <div className='more-menu'>
             Shop Now
@@ -111,9 +111,12 @@ const Wrapper = styled.main`
 
 const Header = styled.h3`
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 8px;
   letter-spacing: 4px;
   font-weight: 600;
+  text-align: center;
+  position: absolute;
+  padding: 0 0 0 10px;
 
   @media screen and (max-width: 940px) {
     display: none;
@@ -245,7 +248,6 @@ const Content = styled.div`
     font-weight: 500;
     display: flex;
     align-items: center;
-    // margin-left: 1rem;
   }
   @media screen and (max-width: 940px) {
     .more-menu {

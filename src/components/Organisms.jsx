@@ -12,7 +12,9 @@ export default function OrganismsPage() {
           <br />
           <Header>Plastic</Header>
           <MainTitle>Stuff</MainTitle>
-          <HeroText>Wave goodbye to natural law!</HeroText>
+          <HeroText>
+            Join the race to the bottom!
+          </HeroText>
           <CardTextLeft>
             ...and behold the miracle of the atomic harvest. Add your
             contribution to the heap!
@@ -110,9 +112,12 @@ const Wrapper = styled.main`
 
 const Header = styled.h3`
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 8px;
   letter-spacing: 4px;
   font-weight: 600;
+  text-align: center;
+  position: absolute;
+  padding: 0 0 0 10px;
 
   @media screen and (max-width: 940px) {
     display: none;

@@ -4,7 +4,7 @@ import { Atoms, Molecules, Organisms, Ecosystems } from './components';
 import './App.css';
 import ProductGrid from './components/ProductGrid';
 import PlantCard from './components/PlantCard';
-
+const links = ['ecosystem', 'atom', 'molecule', 'organism'];
 function App() {
   return (
     <Layout>
