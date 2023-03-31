@@ -3,7 +3,7 @@ import ArrowIcon from '../assets/ArrowIcon';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import { CgScrollV } from 'react-icons/cg';
 import { MdAddShoppingCart } from 'react-icons/md';
-import img from '../../public/organisms.webp';
+import img from '../assets/organisms.webp';
 
 export default function OrganismsPage() {
   return (

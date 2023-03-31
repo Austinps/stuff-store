@@ -27,11 +27,7 @@ export default function Navigation() {
 
       <HeaderMenu>
         {links?.map((item) => (
-          <NavLink
-            style={{ width: '8rem' }}
-            to={item.path}
-            activeClassName='active'
-          >
+          <NavLink style={{ width: '8rem' }} to={item.path}>
             {pathname === item.path ? capitalize(item.text) : item.text}
           </NavLink>
         ))}
