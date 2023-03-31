@@ -26,7 +26,7 @@ export default function Navigation() {
 
       <HeaderMenu>
         {links?.map((item) => (
-          <NavLink to={item.path} >
+          <NavLink to={item.path}>
             {pathname === item.path ? capitalize(item.text) : item.text}
           </NavLink>
         ))}

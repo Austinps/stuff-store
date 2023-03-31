@@ -3,7 +3,7 @@ import ArrowIcon from '../assets/ArrowIcon';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import { CgScrollV } from 'react-icons/cg';
 import { MdAddShoppingCart } from 'react-icons/md';
-import img from '../assets/molecules.webp';
+import img from '../assets/molecules2.webp';
 
 export default function MoleculesPage() {
   return (
@@ -124,8 +124,6 @@ const ProductPrice = styled.h3`
   font-size: 10px;
   letter-spacing: 4px;
   font-weight: 600;
-
-
 `;
 
 const HeaderMobile = styled.h3`

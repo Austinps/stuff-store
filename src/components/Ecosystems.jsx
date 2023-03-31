@@ -3,7 +3,7 @@ import ArrowIcon from '../assets/ArrowIcon';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import { CgScrollV } from 'react-icons/cg';
 import { MdAddShoppingCart } from 'react-icons/md';
-import img from '../assets/ecosystems.webp';
+import img from '../assets/ecosystems3.webp';
 
 export default function EcosystemsPage() {
   return (

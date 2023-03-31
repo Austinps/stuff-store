@@ -3,7 +3,7 @@ import ArrowIcon from '../assets/ArrowIcon';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import { CgScrollV } from 'react-icons/cg';
 import { MdAddShoppingCart } from 'react-icons/md';
-import img from '../assets/atoms.webp';
+import img from '../assets/atoms2.webp';
 
 export default function AtomsPage() {
   return (
@@ -65,15 +65,13 @@ export default function AtomsPage() {
         </Card>
         <AiOutlineArrowRight />
       </Center>
-
       <PageCountMobile>1 / 4</PageCountMobile>
+      <PageCountDesktop>1 / 4</PageCountDesktop>
+      <MainTitleMobile>Stuff</MainTitleMobile>
+      <HeaderMobile>Plastic</HeaderMobile>{' '}
       <ScrollIconDesktop>
         <CgScrollV />
       </ScrollIconDesktop>
-      <PageCountDesktop>1 / 4</PageCountDesktop>
-
-      <MainTitleMobile>Stuff</MainTitleMobile>
-      <HeaderMobile>Plastic</HeaderMobile>
     </Wrapper>
   );
 }
@@ -85,10 +83,11 @@ const Wrapper = styled.main`
   position: relative;
   margin-bottom: 5rem;
 
-  @media screen and (max-width: 940px) {
+  @media screen and (max-width: 740px) {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    margin-top: 20rem;
   }
 `;
 
@@ -127,8 +126,6 @@ const ProductPrice = styled.h3`
   font-size: 10px;
   letter-spacing: 4px;
   font-weight: 600;
-
-
 `;
 const CentPrice = styled.h3`
   text-transform: uppercase;
@@ -139,7 +136,6 @@ const CentPrice = styled.h3`
   letter-spacing: 4px;
   font-weight: 600;
   display: inline;
-
 `;
 const HeaderMobile = styled.h3`
   text-transform: uppercase;
