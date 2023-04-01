@@ -1,19 +1,15 @@
 import styled from 'styled-components';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
-
 import LeftSide from './LeftSide';
 import Card from './Card';
+import CardSection from './CardSection';
 
 export default function AtomsPage() {
   return (
     <Wrapper>
       <LeftSide />
-      <Center>
-        <AiOutlineArrowLeft />
-        <Card />
-        <AiOutlineArrowRight />
-      </Center>
-      <PageCountDesktop>1 / 4</PageCountDesktop>
+      <CardSection />
+
       {/* <MainTitleMobile>Stuff</MainTitleMobile>
       <HeaderMobile>Plastic</HeaderMobile>{' '} */}
       {/* <ScrollIconDesktop>
@@ -56,19 +52,6 @@ const Wrapper = styled.main`
 //   }
 // `;
 
-const PageCountDesktop = styled.h2`
-  font-weight: 400;
-  font-size: 16px;
-  position: absolute;
-  right: 20px;
-  bottom: 5px;
-  text-align: center;
-
-  @media screen and (max-width: 940px) {
-    display: none;
-  }
-`;
-
 const PageCountMobile = styled.h2`
   font-weight: 400;
   font-size: 15px;
@@ -99,40 +82,4 @@ const ScrollIconDesktop = styled.h2`
   }
 `;
 
-const Center = styled.div`
-  display: flex;
-  align-items: center;
-  margin-left: 5rem;
-  position: relative;
-  flex-shrink: 0;
 
-  @media screen and (max-width: 940px) {
-    margin-left: 0;
-    margin-bottom: 56px;
-  }
-  .bottle-bg {
-    width: 320px;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 160px;
-    opacity: 0%;
-  }
-  // @media screen and (max-width: 940px) {
-  //   .bottle-bg {
-  //     width: 260px;
-  //     height: 390px;
-  //   }
-  // }
-  @media screen and (max-width: 940px) {
-    .bottle-bg {
-      width: 220px;
-      height: 340px;
-    }
-  }
-  .bottle-img {
-    position: absolute;
-    top: 30%;
-    left: 0;
-    transform: scale(1.4);
-  }
-`;

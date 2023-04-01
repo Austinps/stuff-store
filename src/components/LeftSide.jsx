@@ -5,17 +5,15 @@ export default function LeftSide() {
   return (
     <Wrapper>
       <Content>
-        <br />
         <HeroText> Step Aside, Mother Nature!</HeroText>
         <CardTextLeft>
           ...and behold the miracle of the atomic harvest. Buy now and add your
           contribution to the heap!
         </CardTextLeft>
-
-        <button className='more-menu'>
+        <ActionBtn>
           Shop Now
           <ArrowIcon />
-        </button>
+        </ActionBtn>
       </Content>
     </Wrapper>
   );
@@ -33,27 +31,30 @@ const Wrapper = styled.div`
     text-align: center;
     max-width: 450px;
   }
+  div {
+    
+  }
 `;
 
 const Content = styled.div`
   margin: 2rem;
   margin-left: 3rem;
-  .more-menu {
-    font-size: 13px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    background-color: var(--atoms-bg);
-    padding: 2px;
-    border: none;
-    // margin-left: 1rem;
-  }
+ 
+`;
+
+const ActionBtn = styled.button`
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  background-color: var(--atoms-bg);
+  padding: 2px;
+  border: none;
+
   @media screen and (max-width: 940px) {
-    .more-menu {
-      justify-content: center;
-    }
+    justify-content: center;
   }
-  .more-menu svg {
+  svg {
     width: 28px;
     height: 18px;
     margin-left: 10px;

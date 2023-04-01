@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Logo from './Logo';
+import Logo from '../Logo';
 import { FaHamburger } from 'react-icons/fa';
 import NavIcons from './NavIcons';
 import NavMenu from './NavMenu';
@@ -8,7 +8,6 @@ export default function Navigation() {
   return (
     <Header>
       <Logo />
-      <NavMenu />
       <HamburgerBox>
         <FaHamburger size='1.5rem' />
       </HamburgerBox>
@@ -23,7 +22,7 @@ const Header = styled.div`
   justify-content: space-around;
   background-color: var(--bg-color);
   height: 72px;
-  width: 100%;
+  width: calc(100% + 20px);
   white-space: nowrap;
   flex-shrink: 0;
   font-weight: 600;
@@ -43,11 +42,7 @@ const Header = styled.div`
 `;
 
 const HamburgerBox = styled.div`
-  display: none;
-
-  @media screen and (max-width: 740px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
