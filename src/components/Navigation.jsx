@@ -1,45 +1,18 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
-import { AiFillRobot } from 'react-icons/ai';
+import Logo from './Logo';
 import { FaHamburger } from 'react-icons/fa';
-import CartIcon from '../assets/CartIcon';
-import ProfileIcon from '../assets/ProfileIcon';
-import SearchIcon from '../assets/SearchIcon';
-import { useLocation } from 'react-router-dom';
+import NavIcons from './NavIcons';
+import NavMenu from './NavMenu';
 
-const links = [
-  { path: '/', text: 'atom' },
-  { path: '/molecules', text: 'molecule' },
-  { path: '/organisms', text: 'organism' },
-  { path: '/ecosystems', text: 'ecosystem' },
-];
 export default function Navigation() {
-  const { pathname } = useLocation();
-  const capitalize = (str) => str[0].toUpperCase() + str.slice(1);
-
   return (
     <Header>
-      <LogoBox>
-        <MainTitleLeft>Plastic</MainTitleLeft>
-        <AiFillRobot size='1.5rem' />
-        <MainTitle>Stuff</MainTitle>
-      </LogoBox>
-
-      <HeaderMenu>
-        {links?.map((item) => (
-          <NavLink to={item.path}>
-            {pathname === item.path ? capitalize(item.text) : item.text}
-          </NavLink>
-        ))}
-      </HeaderMenu>
+      <Logo />
+      <NavMenu />
       <HamburgerBox>
         <FaHamburger size='1.5rem' />
       </HamburgerBox>
-      <HeaderIcons>
-        <SearchIcon />
-        <ProfileIcon />
-        <CartIcon />
-      </HeaderIcons>
+      <NavIcons />
     </Header>
   );
 }
@@ -61,7 +34,7 @@ const Header = styled.div`
   left: 0;
   z-index: 6;
 
-  @media (max-width: 940px) {
+  @media (max-width: 740px) {
     .header {
       width: calc(100% + 20px);
       margin-left: -10px;
@@ -69,56 +42,10 @@ const Header = styled.div`
   }
 `;
 
-const HeaderMenu = styled.div`
-  // text-transform: uppercase;
-  width: 455px;
-  display: flex;
-  justify-content: space-around;
-  @media screen and (max-width: 940px) {
-    display: none;
-  }
-`;
-
-const HeaderIcons = styled.div`
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-
-  svg {
-    width: 18px;
-  }
-  svg:not(:last-child) {
-    margin-right: 20px;
-  }
-`;
-
-const LogoBox = styled.div`
-  padding: 1rem;
-  margin-right: 1rem;
-  display: flex;
-  align-items: center;
-`;
-
-const MainTitle = styled.h1`
-  font-family: var(--italic-font);
-  font-weight: 400;
-  line-height: 1em;
-  display: block;
-  font-size: 18px;
-  margin-left: 0.3rem;
-`;
-const MainTitleLeft = styled.h1`
-  font-weight: 400;
-  line-height: 1em;
-  display: block;
-  font-size: 8px;
-  margin-right: 0.3rem;
-`;
-
 const HamburgerBox = styled.div`
   display: none;
 
-  @media screen and (max-width: 940px) {
+  @media screen and (max-width: 740px) {
     display: flex;
     align-items: center;
     justify-content: center;
