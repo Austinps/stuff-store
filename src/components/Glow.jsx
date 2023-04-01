@@ -11,19 +11,19 @@ export default function Glow() {
 
 const IconBox = styled.a`
   z-index: 100;
-  font-size: 1rem;
-  color: var(--clr-neon);
+  font-size: 0.9rem;
+  //   color: var(--clr-neon);
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
   border: var(--clr-neon) 0.125em solid;
-  padding: 0.35em 1em 0.25em 1em;
+  padding: 0.5em 1em 0.25em 1em;
   border-radius: 0.25em;
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  box-shadow: inset 0 0 0.25em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
   position: absolute;
-  bottom: 2px;
-  right: 14px;
+  bottom: 4px;
+  right: 10px;
   /*   transition: background-color 100ms linear; */
 
   &::before {
@@ -38,7 +38,7 @@ const IconBox = styled.a`
 
     transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
     filter: blur(1em);
-    opacity: 0.7;
+    opacity: 0.3;
   }
 
   &:hover,
@@ -64,10 +64,10 @@ const IconBox = styled.a`
 
   &:hover::before,
   &:focus::before {
-    opacity: 1;
+    opacity: 0.5;
   }
   &:hover::after,
   &:focus::after {
-    opacity: 1;
+    opacity: 0.7;
   }
 `;

@@ -32,27 +32,29 @@ export default function Card() {
         harmful. At vero eosip et accusam et justo duo dolores et ea single-use.
         Stetir clita kasd gubergren, no sea takimata et environmental plastic
         debris. Lorem ipsum dolor sit amet, harmful sadipscing elitr, sed eirmod
-        temporini invidunt plastic straws dolore magnadegradation. Lorem pollution
-        dolore sit amet, disposable sadipscing elitr, sedi diam nonumy eirmodei
-        toxic invidunt ut garbage et dolore landfill aliquyam erat, sed uto diam ui
-        non-biodegradable. At vero plastic pollution et accusam dolores et ea
-        accusam et justo duo dolores et eai garbage waste microplastics. Stet clita
-        kasd gubergren, no season i ut takimata overconsumption est Lorem ut plastic
-        bags dolor it amet plastic doloverconsumption. Lorem pollution dolor sit amet,
-        disposable ut sadipscing elitr, sed diam eos nonumy eirmod toxic
-        invidunt garbage dolore landfill plastic aliquyam erat, got sed diam
-        non-biodegradable. At vero plastic pollution et accusam et justo duo
-        dolores et ea microplastics.Lorem pollution dolor sit amet odor, disposable
-        ut sadipscing elitr. Lorem ipsum dolor sit ameto delo, consetetur
-        sadipscing sed elitr, sed diam nonumy eirmod totim tempor invidunt ut
+        temporini invidunt plastic straws dolore magnadegradation. Lorem
+        pollution dolore sit amet, disposable sadipscing elitr, sedi diam nonumy
+        eirmodei toxic invidunt ut garbage et dolore landfill aliquyam erat, sed
+        uto diam ui non-biodegradable. At vero plastic pollution et accusam
+        dolores et ea accusam et justo duo dolores et eai garbage waste
+        microplastics. Stet clita kasd gubergren, no season i ut takimata
+        overconsumption est Lorem ut plastic bags dolor it amet plastic
+        doloverconsumption. Lorem pollution dolor sit amet, disposable ut
+        sadipscing elitr, sed diam eos nonumy eirmod toxic invidunt garbage
+        dolore landfill plastic aliquyam erat, got sed diam non-biodegradable.
+        At vero plastic pollution et accusam et justo duo dolores et ea
+        microplastics.Lorem pollution dolor sit amet odor, disposable ut
+        sadipscing elitr. Lorem ipsum dolor sit ameto delo, conseteturas
+        sadipscing sed elitr, sed diam nonumy eirmod totim temporum invidunt ut
         plastic packaging etuti dolore plastic waste erat, sed diam harmful. At
         vero plastic pollution et accusam eto justo duo dolores et ea
-        microplastics.Lorem pollution dolor sitim amet, disposable ut sadipscing
+        microplastics.Lorem pollution dolor sitim amet, oi disposable ut sadipscing
         elitr. Lorem ipsum dolor sit amet, consetetur sadipscing sed elitr, sed
-        diam nonumy eirmodor etai tempor invidunt ut plastic packaging et dolore
-        plastic waste era, sed diam harmful. At vero plastic pollution zrefaccusamdoloresea microplastics.Lorem pollutiondoloamedisposable
-        ut sadipscing elitr.Loreipsumconsetenor sedeli,plastic harmful.
+        diam nonumyl eirmodoretaitempor invidunt ut plasticsdfumoptu
+        packagingetdoloreplasticwasteera,seddolore ut se
+        diamharmful.Atveroplasticpollutionzrmicroplastics.
       </CardText>
+
       <CardTextMobile>
         Lorem ipsum dolore, toxic sadipscing eirmod plastic pollution invidunt
         toxic landfill waste, non-biodegradable. Stet vero plastic oceans et
@@ -104,6 +106,7 @@ const CardText = styled.div`
   line-height: 1;
   margin-bottom: 24px;
   letter-spacing: -0.01em;
+  padding: 2px;
 
   @media screen and (max-width: 940px) {
     display: none;
