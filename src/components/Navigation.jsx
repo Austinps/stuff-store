@@ -20,6 +20,7 @@ export default function Navigation() {
   return (
     <Header>
       <LogoBox>
+        <MainTitleLeft>Plastic</MainTitleLeft>
         <AiFillRobot size='1.5rem' />
         <MainTitle>Stuff</MainTitle>
       </LogoBox>
@@ -100,12 +101,18 @@ const LogoBox = styled.div`
 
 const MainTitle = styled.h1`
   font-family: var(--italic-font);
-  font-size: 30px;
   font-weight: 400;
   line-height: 1em;
   display: block;
   font-size: 18px;
   margin-left: 0.3rem;
+`;
+const MainTitleLeft = styled.h1`
+  font-weight: 400;
+  line-height: 1em;
+  display: block;
+  font-size: 8px;
+  margin-right: 0.3rem;
 `;
 
 const HamburgerBox = styled.div`

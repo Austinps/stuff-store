@@ -15,9 +15,10 @@ export default function AtomsPage() {
           <MainTitle>Stuff</MainTitle> */}
           <HeroText> Step Aside, Mother Nature!</HeroText>
           <CardTextLeft>
-            ...and behold the miracle of the atomic harvest. Add your
-            contribution to the pile!
+            ...and behold the miracle of the atomic harvest. Buy now and add
+            your contribution to the heap!
           </CardTextLeft>
+
           <button className='more-menu'>
             Shop Now
             <ArrowIcon />
@@ -31,7 +32,7 @@ export default function AtomsPage() {
             <div>
               Atomic Harvest
               <ProductPrice>
-                €39<CentPrice>.999</CentPrice>
+                €39<CentPrice>.999999999999999999999999999999999999</CentPrice>
               </ProductPrice>
             </div>
             <MdAddShoppingCart size='1.5rem' />
@@ -54,9 +55,26 @@ export default function AtomsPage() {
             pollution dolor sit amet, disposable sadipscing elitr, sed diam
             nonumy eirmod toxic invidunt ut garbage et dolore landfill aliquyam
             erat, sed diam non-biodegradable. At vero plastic pollution et
-            accusam et justo duo dolores et ea garbage microplastics. Stet clita
-            kasd gubergren, no sea takimata overconsumption est Lorem ut plastic
-            bags dolor sit amet overconsumption.
+            accusam dolores et ea accusam et justo duo dolores et ea garbage
+            microplastics. Stet clita kasd gubergren, no sea takimata
+            overconsumption est Lorem ut plastic bags dolor sit amet
+            overconsumption. Lorem pollution dolor sit amet, disposable ut
+            sadipscing elitr, sed diam eos nonumy eirmod toxic invidunt garbage
+            dolore landfill plastic aliquyam erat, sed diam non-biodegradable.
+            At vero plastic pollution et accusam et justo duo dolores et ea
+            microplastics.Lorem pollution dolor sit amet, disposable ut
+            sadipscing elitr. Lorem ipsum dolor sit ameto delo, consetetur
+            sadipscing sed elitr, sed diam nonumy eirmod toti tempor invidunt ut
+            plastic packaging et dolore plastic waste erat, sed diam harmful. At
+            vero plastic pollution et accusam et justo duo dolores et ea
+            microplastics.Lorem pollution dolor sit amet, disposable ut
+            sadipscing elitr. Lorem ipsum dolor sit amet, consetetur sadipscing
+            sed elitr, sed diam nonumy eirmod tempor invidunt ut plastic
+            packaging et dolore plastic waste erat, sed diam harmful. At vero
+            plastic pollution et accusam et justo duo dolores et ea
+            microplastics.Lorem pollution dolor amet, disposable ut sadipscing
+            elitr. Lorem ipsum consetetur sed elitr, plastic packaging et dolore
+            plastic waste harmful.
           </CardText>
           <CardTextMobile>
             Lorem ipsum dolore, toxic sadipscing eirmod plastic pollution
@@ -99,7 +117,7 @@ const Wrapper = styled.main`
   display: flex;
   flex-grow: 1;
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 
   @media screen and (max-width: 740px) {
     flex-direction: column-reverse;
@@ -109,29 +127,29 @@ const Wrapper = styled.main`
   }
 `;
 
-const Header = styled.h3`
-  text-transform: uppercase;
-  font-size: 8px;
-  letter-spacing: 4px;
-  font-weight: 600;
-  text-align: center;
-  position: absolute;
-  padding: 0 0 0 10px;
+// const Header = styled.h3`
+//   text-transform: uppercase;
+//   font-size: 8px;
+//   letter-spacing: 4px;
+//   font-weight: 600;
+//   text-align: center;
+//   position: absolute;
+//   padding: 0 0 0 10px;
 
-  @media screen and (max-width: 940px) {
-    display: none;
-  }
-`;
+//   @media screen and (max-width: 940px) {
+//     display: none;
+//   }
+// `;
 
 const ProductTitle = styled.h3`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: 600;
-  margin: 0;
+  margin: 15px;
   margin-right: 1rem;
 
   div {
@@ -142,20 +160,18 @@ const ProductTitle = styled.h3`
 
 const ProductPrice = styled.h3`
   text-transform: uppercase;
-  // background-color: var(--organisms-bg);
-  padding: 5px 0;
+  background-color: var(--organisms-bg);
+  padding: 1px 2px;
   border-radius: 2px;
   font-size: 10px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-weight: 600;
 `;
+
 const CentPrice = styled.h3`
-  text-transform: uppercase;
-  // background-color: var(--organisms-bg);
-  padding: 5px 0;
   border-radius: 2px;
-  font-size: 7px;
-  letter-spacing: 4px;
+  font-size: 4px;
+  letter-spacing: 1px;
   font-weight: 600;
   display: inline;
 `;
@@ -242,7 +258,7 @@ const ScrollIconDesktop = styled.h2`
 
 const Content = styled.div`
   margin: 2rem;
-  margin-left: 5rem;
+  margin-left: 3rem;
   .more-menu {
     font-size: 13px;
     font-weight: 500;
@@ -266,7 +282,7 @@ const Content = styled.div`
 `;
 
 const HeroText = styled.div`
-  font-size: 60px;
+  font-size: 55px;
   font-family: var(--italic-font);
 
   margin-bottom: 0.5rem;
@@ -277,7 +293,7 @@ const HeroText = styled.div`
 `;
 
 const CardText = styled.div`
-  font-size: 14px;
+  font-size: 10px;
   opacity: 30%;
   line-height: 1;
   margin-bottom: 24px;
@@ -315,7 +331,7 @@ const CardTextMobile = styled.div`
 const Center = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 120px;
+  margin-left: 5rem;
   position: relative;
   flex-shrink: 0;
 
@@ -354,7 +370,7 @@ const LeftSide = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-left: 2rem;
+  margin-left: 5rem;
   justify-content: space-between;
   max-width: 320px;
 
@@ -375,8 +391,8 @@ const Card = styled.section`
   background-color: var(--bg-beach);
   color: var(--text);
   cursor: pointer;
-  margin: 2rem;
-  margin-right: 5rem;
+  margin: 3rem;
+  margin-right: 3rem;
   hr {
     margin-bottom: 5px;
   }

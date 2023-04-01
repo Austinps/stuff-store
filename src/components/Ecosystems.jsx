@@ -29,7 +29,7 @@ export default function EcosystemsPage() {
         <Card id='ecosystems'>
           <ProductTitle>
             <div>
-              Biome Shift
+              Habitat Transplant
               <ProductPrice>
                 €39<CentPrice>.999</CentPrice>
               </ProductPrice>
@@ -139,13 +139,14 @@ const ProductTitle = styled.h3`
 
 const ProductPrice = styled.h3`
   text-transform: uppercase;
-  // background-color: var(--organisms-bg);
-  padding: 5px 0;
+  background-color: var(--atoms-bg);
+  padding: 2px 5px;
   border-radius: 2px;
   font-size: 10px;
   letter-spacing: 4px;
   font-weight: 600;
 `;
+
 const CentPrice = styled.h3`
   text-transform: uppercase;
   // background-color: var(--organisms-bg);
@@ -263,7 +264,7 @@ const Content = styled.div`
 `;
 
 const HeroText = styled.div`
-  font-size: 60px;
+  font-size: 55px;
   font-family: var(--italic-font);
 
   margin-bottom: 0.5rem;

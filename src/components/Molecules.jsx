@@ -12,7 +12,7 @@ export default function MoleculesPage() {
           <br />
           {/* <Header>Plastic</Header>
           <MainTitle>Stuff</MainTitle> */}
-          <HeroText>Rebel Against Nature's Law!</HeroText>
+          <HeroText>Defy Nature's PLan!</HeroText>
           <CardTextLeft>
             ...and behold the miracle of the atomic harvest. Add your
             contribution to the heap!
@@ -28,7 +28,8 @@ export default function MoleculesPage() {
         <Card id='molecules'>
           <ProductTitle>
             <div>
-              Molecular Overhaul
+              <h2>Nano </h2>
+              <h3>Scale</h3>
               <ProductPrice>
                 €42<CentPrice>.999</CentPrice>
               </ProductPrice>
@@ -133,13 +134,17 @@ const ProductTitle = styled.h3`
   div {
     display: flex;
     flex-direction: column;
+
+    h3 {
+      font-size: 12px;
+    }
   }
 `;
 
 const ProductPrice = styled.h3`
   text-transform: uppercase;
-  // background-color: var(--organisms-bg);
-  padding: 5px 0;
+  background-color: var(--organisms-bg);
+  padding: 2px 3px;
   border-radius: 2px;
   font-size: 10px;
   letter-spacing: 4px;
@@ -262,7 +267,7 @@ const Content = styled.div`
 `;
 
 const HeroText = styled.div`
-  font-size: 60px;
+  font-size: 55px;
   font-family: var(--italic-font);
 
   margin-bottom: 0.5rem;

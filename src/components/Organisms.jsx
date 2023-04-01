@@ -28,12 +28,16 @@ export default function OrganismsPage() {
         <Card id='organisms'>
           <ProductTitle>
             <div>
-              Organ Overdrive
-              <ProductPrice>
-                €39<CentPrice>.999</CentPrice>
-              </ProductPrice>
+              {' '}
+              <h2>Organ Refit</h2>
+              <h3>
+                €39<span>.999</span>
+              </h3>
             </div>
-            <MdAddShoppingCart size='1.5rem' />
+
+            <div>
+              <MdAddShoppingCart size='1.7rem' />
+            </div>
           </ProductTitle>
 
           <hr />
@@ -73,7 +77,6 @@ export default function OrganismsPage() {
             gubergren overconsumption toxic Lorem plastic bags plastic packaging
             et justo dolore plastic debris harmful.
           </CardTextMobile>
-
           <img className='bottle-bg' src='' alt='' />
           <img className='bottle-img' src={img} />
           <PageCountMobile>
@@ -86,9 +89,6 @@ export default function OrganismsPage() {
       <PageCountDesktop>1 / 4</PageCountDesktop>
       <MainTitleMobile>Stuff</MainTitleMobile>
       <HeaderMobile>Plastic</HeaderMobile>{' '}
-      {/* <ScrollIconDesktop>
-        <CgScrollV />
-      </ScrollIconDesktop> */}
     </Wrapper>
   );
 }
@@ -108,20 +108,6 @@ const Wrapper = styled.main`
   }
 `;
 
-const Header = styled.h3`
-  text-transform: uppercase;
-  font-size: 8px;
-  letter-spacing: 4px;
-  font-weight: 600;
-  text-align: center;
-  position: absolute;
-  padding: 0 0 0 10px;
-
-  @media screen and (max-width: 940px) {
-    display: none;
-  }
-`;
-
 const ProductTitle = styled.h3`
   display: flex;
   justify-content: space-between;
@@ -136,15 +122,30 @@ const ProductTitle = styled.h3`
   div {
     display: flex;
     flex-direction: column;
+    font-size: 11px;
+
+    h3 {
+      margin-top: 2px;
+      font-size: 12px;
+      background-color: var(--molecules-bg);
+      padding: 2px 5px;
+    }
+    span {
+      font-size: 8px;
+    }
   }
 `;
 
-const ProductPrice = styled.h3`
-  text-transform: uppercase;
-  // background-color: var(--organisms-bg);
-  padding: 5px 0;
-  border-radius: 2px;
-  font-size: 10px;
+const ProductPrice = styled.button`
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: var(--atoms-bg);
+  padding: 2;
+  border-bottom-right-radius: 5px;
+  border: none;
+  font-size: 20px;
   letter-spacing: 4px;
   font-weight: 600;
 `;
@@ -265,7 +266,7 @@ const Content = styled.div`
 `;
 
 const HeroText = styled.div`
-  font-size: 60px;
+  font-size: 55px;
   font-family: var(--italic-font);
 
   margin-bottom: 0.5rem;
@@ -278,7 +279,7 @@ const HeroText = styled.div`
 const CardText = styled.div`
   font-size: 14px;
   opacity: 30%;
-  line-height: 1;
+  line-height: 0.9;
   margin-bottom: 24px;
   letter-spacing: -0.01em;
 
