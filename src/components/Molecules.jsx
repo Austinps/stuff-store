@@ -7,22 +7,6 @@ import img from '../assets/molecules2.webp';
 export default function MoleculesPage() {
   return (
     <Wrapper>
-      <LeftSide>
-        <Content>
-          <br />
-          {/* <Header>Plastic</Header>
-          <MainTitle>Stuff</MainTitle> */}
-          <HeroText>Defy Nature's PLan!</HeroText>
-          <CardTextLeft>
-            ...and behold the miracle of the atomic harvest. Add your
-            contribution to the heap!
-          </CardTextLeft>
-          <button className='more-menu'>
-            Shop Now
-            <ArrowIcon />
-          </button>
-        </Content>
-      </LeftSide>
       <Center>
         <AiOutlineArrowLeft />
         <Card id='molecules'>

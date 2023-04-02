@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { MdAddShoppingCart } from 'react-icons/md';
-import Glow from './Glow';
 
 export default function Flicker({ children }) {
   return <Wrapper>{children}</Wrapper>;
@@ -9,15 +7,14 @@ export default function Flicker({ children }) {
 const Wrapper = styled.h1`
   display: flex;
   align-items: center;
+  justify-content: center;
   color: var(--neon-text-color);
   font-family: 'Exo 2', sans-serif;
   font-size: 0.5rem;
   font-weight: 200;
   font-style: italic;
   color: #fff;
-  padding: 0.5rem 0.8em 0.5rem 1rem;
-  border: 0.1rem solid #fff;
-  border-radius: 2rem;
+
   animation: flicker 2s infinite alternate;
 
   &::-moz-selection {
@@ -52,7 +49,7 @@ const Wrapper = styled.h1`
       box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff,
         0 0 2rem var(--neon-border-color),
         inset 0 0 2rem var(--neon-border-color),
-        0 0 4rem var(--neon-border-color),
+        0 0 2rem var(--neon-border-color),
         inset 0 0 4rem var(--neon-border-color);
     }
 

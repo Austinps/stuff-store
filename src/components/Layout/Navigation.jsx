@@ -8,6 +8,7 @@ export default function Navigation() {
     <>
       <Header>
         <Logo />
+
         <NavMenu />
         <NavIcons />{' '}
       </Header>
