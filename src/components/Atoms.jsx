@@ -17,6 +17,7 @@ export default function AtomsPage() {
 const Wrapper = styled.main`
   padding: 42px 0 30px;
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
   position: relative;
   margin-bottom: 3rem;

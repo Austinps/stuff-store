@@ -126,6 +126,7 @@ const ProductTitle = styled.h3`
 `;
 
 const ProductPrice = styled.h3`
+  text-align: justify;
   text-transform: uppercase;
   background-color: var(--organisms-bg);
   padding: 2px 3px;

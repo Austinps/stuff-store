@@ -136,29 +136,6 @@ const ProductTitle = styled.h3`
   }
 `;
 
-const ProductPrice = styled.button`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  background-color: var(--atoms-bg);
-  padding: 2;
-  border-bottom-right-radius: 5px;
-  border: none;
-  font-size: 20px;
-  letter-spacing: 4px;
-  font-weight: 600;
-`;
-const CentPrice = styled.h3`
-  text-transform: uppercase;
-  // background-color: var(--organisms-bg);
-  padding: 5px 0;
-  border-radius: 2px;
-  font-size: 7px;
-  letter-spacing: 4px;
-  font-weight: 600;
-  display: inline;
-`;
 const HeaderMobile = styled.h3`
   text-transform: uppercase;
   font-size: 9px;
@@ -171,17 +148,6 @@ const HeaderMobile = styled.h3`
 
   @media screen and (max-width: 940px) {
     display: block;
-  }
-`;
-
-const MainTitle = styled.h1`
-  font-family: var(--italic-font);
-  font-size: 100px;
-  font-weight: 400;
-  line-height: 1em;
-
-  @media screen and (max-width: 940px) {
-    display: none;
   }
 `;
 
@@ -225,18 +191,6 @@ const PageCountMobile = styled.h2`
 
     bottom: -100px;
     right: 25%;
-  }
-`;
-
-const ScrollIconDesktop = styled.h2`
-  font-family: var(--italic-font);
-  font-weight: 400;
-  font-size: 20px;
-  position: absolute;
-  bottom: 0;
-
-  @media screen and (max-width: 940px) {
-    display: none;
   }
 `;
 

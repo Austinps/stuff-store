@@ -4,9 +4,9 @@ export default function NeonSign() {
   return (
     <Wrapper>
       <Neon>
-        Atomic Harvest
-        {/* <br />
-        Mother Nature! */}
+        Step Aside,
+        <br />
+        Mother Nature!
       </Neon>
     </Wrapper>
   );
@@ -15,6 +15,7 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 const Neon = styled.h1`
+font-size:18px;
 color: #fff;
   text-shadow:
     0 0 5px #fff,

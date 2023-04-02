@@ -8,7 +8,7 @@
   --clr-neon: #f35d5f;
   --neon-text-color: #f40;
   --neon-border-color: #08f;
-  --ecosystems-bg: #ddb27e;
+  --ecosystems-bg: #d4ebcb;
   --atoms-bg: #e6dac4;
   --molecules-bg: #c6d4ce;
   --organisms-bg: #e7aba5;
@@ -20,7 +20,7 @@
   box-sizing: border-box;
   outline: none;
 }
-img {
+img { 
   max-width: 100%;
 }
 a {

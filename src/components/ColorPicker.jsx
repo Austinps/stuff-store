@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import Flicker from './Flicker';
 
 export default function ColorPicker() {
   return (
@@ -24,7 +23,6 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 
   .color-option .circles {
@@ -33,32 +31,32 @@ const Wrapper = styled.div`
   .color-option .circles .circle {
     height: 10px;
     width: 10px;
-    background: #0071c7;
+    background: var(--molecules-bg);
     border-radius: 50%;
-    margin: 0 8px;
+    margin-right: 16px;
     cursor: pointer;
     transition: all 0.4s ease;
   }
   .color-option .circles .circle.blue.active {
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0071c7;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--molecules-bg);
   }
   .color-option .circles .circle.pink {
-    background: #fa1795;
+    background: var(--organisms-bg);
   }
   .color-option .circles .circle.pink.active {
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #fa1795;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--organisms-bg);
   }
   .color-option .circles .circle.yellow {
-    background: #f5da00;
+    background: var(--ecosystems-bg);
   }
   .color-option .circles .circle.yellow.active {
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f5da00;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--ecosystems-bg);
   }
   .color-option .circles .circle.green {
-    background: #39ff14;
+    background: var(--atoms-bg);
   }
   .color-option .circles .circle.green.active {
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #39ff14;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--atoms-bg);
   }
   .color-price .price {
     display: flex;

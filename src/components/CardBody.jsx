@@ -2,13 +2,12 @@ import styled from 'styled-components';
 import img from '../assets/atoms2.webp';
 import { desktopText, mobileText } from '../data/bgText';
 
-export default function CardBoby({ children }) {
+export default function CardBody({ children }) {
   return (
     <Wrapper id='atoms'>
       {children}
       <hr />
       <CardText>{desktopText}</CardText>
-
       <ImageWrapper>
         <img src={img} />
       </ImageWrapper>
@@ -28,6 +27,7 @@ const Wrapper = styled.section`
   cursor: pointer;
   margin: 3rem;
   margin-right: 3rem;
+  padding: 1rem;
 
 
   hr {
@@ -42,12 +42,12 @@ const Wrapper = styled.section`
 
 const CardText = styled.div`
   text-align: justify;
-  font-size: 8px;
+  font-size: 10px;
   opacity: 30%;
   line-height: 1;
   margin-bottom: 24px;
   letter-spacing: -0.01em;
-  padding: 0 10px;
+
   overflow: hidden;
 
   @media screen and (max-width: 940px) {
@@ -62,9 +62,9 @@ const CardText = styled.div`
 const ImageWrapper = styled.div`
   img {
     position: absolute;
-    top: 20%;
+    top: 23%;
     left: 0%;
-    transform: scale(1.35);
+    transform: scale(1.4);
 
     @media screen and (max-width: 940px) {
       left: 0%;
