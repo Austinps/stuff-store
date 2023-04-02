@@ -18,7 +18,6 @@ export default function CardBoby({ children }) {
 
 const Wrapper = styled.section`
   position: relative;
-   text-align: justify;
   padding: 0.5rem 1rem 0.25rem 1 rem;
   width: 350px;
   height: 450px;
@@ -42,6 +41,7 @@ const Wrapper = styled.section`
 `;
 
 const CardText = styled.div`
+  text-align: justify;
   font-size: 8px;
   opacity: 30%;
   line-height: 1;
@@ -51,7 +51,7 @@ const CardText = styled.div`
   overflow: hidden;
 
   @media screen and (max-width: 940px) {
-    font-size: 14px;
+    font-size: 8px;
     opacity: 30%;
     line-height: 1;
     margin-bottom: 24px;
@@ -64,10 +64,10 @@ const ImageWrapper = styled.div`
     position: absolute;
     top: 20%;
     left: 0%;
-    transform: scale(1.4);
+    transform: scale(1.35);
 
     @media screen and (max-width: 940px) {
-      left: 8%;
+      left: 0%;
     }
   }
 `;

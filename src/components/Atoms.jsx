@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
-import LeftSide from './LeftSide';
-import Card from './Card';
 import CardSection from './CardSection';
 
 export default function AtomsPage() {
   return (
     <Wrapper>
-      {/* <LeftSide /> */}
       <CardSection />
       <PageCountMobile>
         <AiOutlineArrowLeft />

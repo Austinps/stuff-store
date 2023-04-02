@@ -24,7 +24,7 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+
   }
 
   .color-option .circles {
@@ -35,7 +35,7 @@ const Wrapper = styled.div`
     width: 10px;
     background: #0071c7;
     border-radius: 50%;
-    margin: 0 5px;
+    margin: 0 8px;
     cursor: pointer;
     transition: all 0.4s ease;
   }

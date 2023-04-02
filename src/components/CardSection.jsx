@@ -2,9 +2,11 @@ import styled from 'styled-components';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import Card from './Card';
 
+
 export default function CardSection() {
   return (
     <Center>
+      
       <AiOutlineArrowLeft />
       <Card />
       <AiOutlineArrowRight />
@@ -15,6 +17,7 @@ export default function CardSection() {
 
 const Center = styled.div`
   display: flex;
+
   align-items: center;
   margin-left: 5rem;
   position: relative;
@@ -35,6 +38,6 @@ const PageCountDesktop = styled.h2`
   text-align: center;
 
   @media screen and (max-width: 940px) {
-    display: none;
+    bottom: 0;
   }
 `;
