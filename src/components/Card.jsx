@@ -3,7 +3,6 @@ import { CgScrollV } from 'react-icons/cg';
 import { MdAddShoppingCart } from 'react-icons/md';
 import img from '../assets/atoms2.webp';
 import Glow from './Glow';
-import Flicker from './Flicker';
 
 export default function Card() {
   return (
@@ -12,13 +11,12 @@ export default function Card() {
         <h3>Atomic Harvest</h3>
         <ProductPrice>
           <div>
-            €39<span>.99</span>
+            €39<span>.9999</span>
           </div>
-          <span>300ml</span>
         </ProductPrice>
       </ProductTitle>
       <CartIcon>
-        <Glow />
+        <MdAddShoppingCart size='1.5rem' />
       </CartIcon>
       <hr />
       <CardText>
@@ -129,7 +127,7 @@ const CardTextMobile = styled.div`
 
 const ProductTitle = styled.h3`
   display: flex;
-  text-align: center;
+  text-align: left;
   flex-direction: column;
   font-size: 20px;
   letter-spacing: 2px;
@@ -138,17 +136,17 @@ const ProductTitle = styled.h3`
   margin-right: 1rem;
 
   h3 {
-
   }
 `;
 
 const ProductPrice = styled.h3`
+  width: fit-content;
   background-color: var(--organisms-bg);
   display: flex;
   border-radious: 5px;
   justify-content: space-between;
   align-items: flex-end;
-  width: 100%;
+
   text-transform: uppercase;
 
   padding: 2px 3px;
@@ -188,8 +186,8 @@ const HeaderMobile = styled.h3`
 
 const CartIcon = styled.div`
   position: absolute;
-  bottom: 5px;
-  right: 8px;
+  top: 15px;
+  right: 10px;
   // border: 1px solid black;
   padding: 5px;
   border-radius: 2px;

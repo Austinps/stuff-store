@@ -16,11 +16,11 @@ const IconBox = styled.a`
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
-  border: var(--organisms-bg) 0.125em solid;
+  border: var(--body-color) 0.125em solid;
   padding: 0.5em 1em 0.25em 1em;
   border-radius: 0.25em;
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-  box-shadow: inset 0 0 0.25em 0 var(--organisms-bg), 0 0 0.5em 0 var(--organisms-bg);
+
   position: absolute;
   bottom: 4px;
   right: 10px;
