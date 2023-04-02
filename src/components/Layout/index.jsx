@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Container>
-        <MobileNavigation />
+        <Navigation />
         {children}
       </Container>
     </>

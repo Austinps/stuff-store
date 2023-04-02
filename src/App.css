@@ -5,7 +5,9 @@
 :root {
   --body-color: #2c2d2a;
   --bg-color: #e6decf;
-   --clr-neon: #f35d5f;
+  --clr-neon: #f35d5f;
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
   --ecosystems-bg: #ddb27e;
   --atoms-bg: #e6dac4;
   --molecules-bg: #c6d4ce;

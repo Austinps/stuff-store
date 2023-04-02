@@ -1,18 +1,21 @@
 import styled from 'styled-components';
 import ArrowIcon from '../assets/ArrowIcon';
+import Flicker from './Flicker';
 
 export default function LeftSide() {
   return (
     <Wrapper>
       <Content>
         <HeroText> Step Aside, Mother Nature!</HeroText>
+
         <CardTextLeft>
           ...and behold the miracle of the atomic harvest. Buy now and add your
           contribution to the heap!
         </CardTextLeft>
         <ActionBtn>
-          Shop Now
-          <ArrowIcon />
+          <Flicker>
+            Shop Now <ArrowIcon />
+          </Flicker>
         </ActionBtn>
       </Content>
     </Wrapper>
@@ -32,18 +35,15 @@ const Wrapper = styled.div`
     max-width: 450px;
   }
   div {
-    
   }
 `;
 
 const Content = styled.div`
   margin: 2rem;
   margin-left: 3rem;
- 
 `;
 
 const ActionBtn = styled.button`
-  font-size: 13px;
   font-weight: 500;
   display: flex;
   align-items: center;

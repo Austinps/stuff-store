@@ -7,14 +7,8 @@ import CardSection from './CardSection';
 export default function AtomsPage() {
   return (
     <Wrapper>
-      <LeftSide />
+      {/* <LeftSide /> */}
       <CardSection />
-
-      {/* <MainTitleMobile>Stuff</MainTitleMobile>
-      <HeaderMobile>Plastic</HeaderMobile>{' '} */}
-      {/* <ScrollIconDesktop>
-        <CgScrollV />
-      </ScrollIconDesktop> */}
       <PageCountMobile>
         <AiOutlineArrowLeft />
         1 / 4<AiOutlineArrowRight />
@@ -81,5 +75,3 @@ const ScrollIconDesktop = styled.h2`
     display: none;
   }
 `;
-
-

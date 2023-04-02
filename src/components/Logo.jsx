@@ -4,9 +4,10 @@ import { AiFillRobot } from 'react-icons/ai';
 export default function Logo() {
   return (
     <Wrapper>
+      {' '}
       <MainTitleLeft>Plastic</MainTitleLeft>
       <AiFillRobot size='1.5rem' />
-      <MainTitle>Stuff</MainTitle>
+      <MainTitle>Stuff</MainTitle>{' '}
     </Wrapper>
   );
 }

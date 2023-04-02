@@ -3,18 +3,19 @@ import { CgScrollV } from 'react-icons/cg';
 import { MdAddShoppingCart } from 'react-icons/md';
 import img from '../assets/atoms2.webp';
 import Glow from './Glow';
+import Flicker from './Flicker';
 
 export default function Card() {
   return (
     <Wrapper id='atoms'>
       <ProductTitle>
-        Atomic Harvest
-        {/* <ProductPrice>
-              <div>
-                €39<span>.99</span>
-              </div>
-              <span>300ml</span>
-            </ProductPrice> */}
+        <h3>Atomic Harvest</h3>
+        <ProductPrice>
+          <div>
+            €39<span>.99</span>
+          </div>
+          <span>300ml</span>
+        </ProductPrice>
       </ProductTitle>
       <CartIcon>
         <Glow />
@@ -48,9 +49,9 @@ export default function Card() {
         sadipscing sed elitr, sed diam nonumy eirmod totim temporum invidunt ut
         plastic packaging etuti dolore plastic waste erat, sed diam harmful. At
         vero plastic pollution et accusam eto justo duo dolores et ea
-        microplastics.Lorem pollution dolor sitim amet, oi disposable ut sadipscing
-        elitr. Lorem ipsum dolor sit amet, consetetur sadipscing sed elitr, sed
-        diam nonumyl eirmodoretaitempor invidunt ut plasticsdfumoptu
+        microplastics.Lorem pollution dolor sitim amet, oi disposable ut
+        sadipscing elitr. Lorem ipsum dolor sit amet, consetetur sadipscing sed
+        elitr, sed diam nonumyl eirmodoretaitempor invidunt ut plasticsdfumoptu
         packagingetdoloreplasticwasteera,seddolore ut se
         diamharmful.Atveroplasticpollutionzrmicroplastics.
       </CardText>
@@ -135,16 +136,21 @@ const ProductTitle = styled.h3`
   font-weight: 600;
   margin: 15px;
   margin-right: 1rem;
+
+  h3 {
+
+  }
 `;
 
 const ProductPrice = styled.h3`
+  background-color: var(--organisms-bg);
   display: flex;
   border-radious: 5px;
   justify-content: space-between;
   align-items: flex-end;
-  width: 80%;
+  width: 100%;
   text-transform: uppercase;
-  background-color: var(--organisms-bg);
+
   padding: 2px 3px;
   border-radius: 2px;
   font-size: 12px;

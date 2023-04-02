@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import Logo from '../Logo';
 import { FaHamburger } from 'react-icons/fa';
 import NavIcons from './NavIcons';
-import NavMenu from './NavMenu';
 
 export default function Navigation() {
   return (
@@ -11,6 +10,7 @@ export default function Navigation() {
       <HamburgerBox>
         <FaHamburger size='1.5rem' />
       </HamburgerBox>
+
       <NavIcons />
     </Header>
   );

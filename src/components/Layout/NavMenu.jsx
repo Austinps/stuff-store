@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import Flicker from '../Flicker';
 
 const links = [
   { path: '/', text: 'atom' },

@@ -12,15 +12,15 @@ export default function Glow() {
 const IconBox = styled.a`
   z-index: 100;
   font-size: 0.9rem;
-  //   color: var(--clr-neon);
+  //   color: var(--organisms-bg);
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
-  border: var(--clr-neon) 0.125em solid;
+  border: var(--organisms-bg) 0.125em solid;
   padding: 0.5em 1em 0.25em 1em;
   border-radius: 0.25em;
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-  box-shadow: inset 0 0 0.25em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  box-shadow: inset 0 0 0.25em 0 var(--organisms-bg), 0 0 0.5em 0 var(--organisms-bg);
   position: absolute;
   bottom: 4px;
   right: 10px;
@@ -30,7 +30,7 @@ const IconBox = styled.a`
     pointer-events: none;
     content: '';
     position: absolute;
-    background: var(--clr-neon);
+    background: var(--organisms-bg);
     top: 120%;
     left: 0;
     width: 100%;
@@ -43,7 +43,7 @@ const IconBox = styled.a`
 
   &:hover,
   &:focus {
-    /*   background: var(--clr-neon); */
+    /*   background: var(--organisms-bg); */
     color: var(--clr-bg);
     text-shadow: none;
   }
@@ -55,8 +55,8 @@ const IconBox = styled.a`
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: 0 0 2em 0.5em var(--clr-neon);
-    background-color: var(--clr-neon);
+    box-shadow: 0 0 2em 0.5em var(--organisms-bg);
+    background-color: var(--organisms-bg);
     z-index: -1;
     opacity: 0;
     transition: opacity 100ms linear;

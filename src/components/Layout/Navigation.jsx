@@ -1,19 +1,17 @@
 import styled from 'styled-components';
 import Logo from '../Logo';
-// import { FaHamburger } from 'react-icons/fa';
 import NavIcons from './NavIcons';
 import NavMenu from './NavMenu';
 
 export default function Navigation() {
   return (
-    <Header>
-      <Logo />
-      <NavMenu />
-      <HamburgerBox>
-        <FaHamburger size='1.5rem' />
-      </HamburgerBox>
-      <NavIcons />
-    </Header>
+    <>
+      <Header>
+        <Logo />
+        <NavMenu />
+        <NavIcons />{' '}
+      </Header>
+    </>
   );
 }
 
