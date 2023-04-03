@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ArrowIcon from '../assets/ArrowIcon';
+// import ArrowIcon from '../assets/ArrowIcon';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import { MdAddShoppingCart } from 'react-icons/md';
 import img from '../assets/organisms3.webp';
@@ -19,7 +19,7 @@ export default function OrganismsPage() {
           </CardTextLeft>
           <button className='more-menu'>
             Shop Now
-            <ArrowIcon />
+            {/* <ArrowIcon /> */}
           </button>
         </Content>
       </LeftSide>

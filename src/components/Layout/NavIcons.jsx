@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import CartIcon from '../../assets/CartIcon';
-import ProfileIcon from '../../assets/ProfileIcon';
-import SearchIcon from '../../assets/SearchIcon';
+import CartIcon from '../common/CartIcon';
+import ProfileIcon from '../common/ProfileIcon';
+import SearchIcon from '../common/SearchIcon';
 
 export default function NavIcons() {
   return (

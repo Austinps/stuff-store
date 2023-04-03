@@ -29,34 +29,34 @@ const Wrapper = styled.div`
     display: flex;
   }
   .color-option .circles .circle {
-    height: 10px;
-    width: 10px;
-    background: var(--molecules-bg);
+    height: 11px;
+    width: 11px;
+    background: var(--neon-border-color);
     border-radius: 50%;
     margin-right: 16px;
     cursor: pointer;
     transition: all 0.4s ease;
   }
   .color-option .circles .circle.blue.active {
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--molecules-bg);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--neon-border-color);
   }
   .color-option .circles .circle.pink {
-    background: var(--organisms-bg);
+    background: var(--clr-neon);
   }
   .color-option .circles .circle.pink.active {
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--organisms-bg);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--clr-neon);
   }
   .color-option .circles .circle.yellow {
-    background: var(--ecosystems-bg);
+    background: var(--clr-yellow);
   }
   .color-option .circles .circle.yellow.active {
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--ecosystems-bg);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--clr-yellow);
   }
   .color-option .circles .circle.green {
-    background: var(--atoms-bg);
+    background: var(--clr-green);
   }
   .color-option .circles .circle.green.active {
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--atoms-bg);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--clr-green);
   }
   .color-price .price {
     display: flex;

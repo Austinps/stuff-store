@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import img from '../assets/atoms2.webp';
-import { desktopText, mobileText } from '../data/bgText';
+import img from '../../assets/atoms2.webp';
+import { desktopText, mobileText } from '../../data/bgText';
 
 export default function CardBody({ children }) {
   return (
@@ -11,7 +11,6 @@ export default function CardBody({ children }) {
       <ImageWrapper>
         <img src={img} />
       </ImageWrapper>
-     
     </Wrapper>
   );
 }
@@ -26,7 +25,7 @@ const Wrapper = styled.section`
   background-color: var(--bg-beach);
   color: var(--text);
   cursor: pointer;
-  margin: 1.5rem;
+  margin: 1rem;
 
   padding: 1rem;
 
@@ -63,13 +62,8 @@ const CardText = styled.div`
 const ImageWrapper = styled.div`
   img {
     position: absolute;
-    top: 23%;
+    top: 20%;
     left: 0%;
     transform: scale(1.4);
-
-    @media screen and (max-width: 940px) {
-      left: 0%;
-    }
   }
 `;
-

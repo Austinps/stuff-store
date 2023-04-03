@@ -6,29 +6,20 @@ export default function CardHeader() {
     <Wrapper>
       <ProductTitle>
         <div>
-          {' '}
           <h2>Atomic Harvest</h2>
           <h3>
             €39<span>.99999</span>
           </h3>
         </div>
-
         <div>
           <MdAddShoppingCart size='1.7rem' />
         </div>
       </ProductTitle>
-
-      {/* <CartIcon>
-        <MdAddShoppingCart size='1.75rem' />
-      </CartIcon> */}
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div``;
-const ColorWrapper = styled.div`
-  margin-top: 15px;
-`;
 
 const ProductTitle = styled.h3`
   display: flex;
@@ -38,8 +29,12 @@ const ProductTitle = styled.h3`
   font-size: 14px;
   letter-spacing: 2px;
   font-weight: 600;
-  margin: 0;
   margin-right: 1rem;
+  width: 85%;
+
+  @media screen and (max-width: 940px) {
+    width: 90%;
+  }
 
   div {
     display: flex;

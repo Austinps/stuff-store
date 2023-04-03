@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import CardSection from './Card/CardSection';
+import CardSection from './CardSection';
 
 export default function AtomsPage() {
   return (

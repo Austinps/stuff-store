@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ArrowIcon from '../assets/ArrowIcon';
+// import ArrowIcon from '../assets/ArrowIcon';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 import { MdAddShoppingCart } from 'react-icons/md';
 import img from '../assets/molecules2.webp';
