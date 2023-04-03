@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 import { MdAddShoppingCart } from 'react-icons/md';
 
-export default function CardHeader({ name, price }) {
-    return (
+export default function CardHeader({ name, subname, price }) {
+  return (
     <Wrapper>
       <ProductTitle>
         <div>
-          <h2>{name}</h2>
+          <h2>
+            {name} <span>{subname}</span>
+          </h2>
           <h3>
             €{price}
             <span>.99</span>
@@ -41,6 +43,12 @@ const ProductTitle = styled.h3`
     display: flex;
     flex-direction: column;
     font-size: 11px;
+
+    h2 {
+      span {
+        font-size: 12px;
+      }
+    }
 
     h3 {
       width: content-fit;

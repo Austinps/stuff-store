@@ -6,13 +6,15 @@ import ecosystemsImage from '../assets/ecosystems3.webp';
 export const products = [
   {
     name: 'Habitat Transplant',
+    subname: 'Harvest',
     img: ecosystemsImage,
     brand: 'ecosystems',
     price: 39,
     slug: 'ecosystems',
   },
   {
-    name: 'Harvest Atomic',
+    name: 'Atomic',
+    subname: 'Harvest',
     img: atomsImage,
     brand: 'atoms',
     price: 45,
@@ -20,6 +22,7 @@ export const products = [
   },
   {
     name: 'Molecular',
+    subname: 'Harvest',
     img: moleculesImage,
     brand: 'molecules',
     price: 49,
@@ -27,6 +30,7 @@ export const products = [
   },
   {
     name: 'Organ Refit',
+    subname: 'Harvest',
     img: organismsImage,
     brand: 'organisms',
     price: 55,
