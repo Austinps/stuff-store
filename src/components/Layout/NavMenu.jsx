@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import Flicker from '../Flicker';
 
+const path = '/products';
 const links = [
-  { path: '/', text: 'atom' },
-  { path: '/molecules', text: 'molecule' },
-  { path: '/organisms', text: 'organism' },
-  { path: '/ecosystems', text: 'ecosystem' },
+  { path: `${path}/atoms`, text: 'atom' },
+  { path: `${path}/molecules`, text: 'molecule' },
+  { path: `${path}/organisms`, text: 'organism' },
+  { path: `${path}/ecosystems`, text: 'ecosystem' },
 ];
 
 export default function NavMenu() {

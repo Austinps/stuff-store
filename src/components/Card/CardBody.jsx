@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import img from '../../assets/atoms2.webp';
-import { desktopText, mobileText } from '../../data/bgText';
+import { desktopText } from '../../data/bgText';
 
-export default function CardBody({ children }) {
+export default function CardBody({ brand, children, img }) {
   return (
-    <Wrapper id='atoms'>
+    <Wrapper id={brand}>
       {children}
       <hr />
       <CardText>{desktopText}</CardText>

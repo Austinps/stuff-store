@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import CardSection from './CardSection';
+import CardSection from './Card/CardSection';
 
-export default function AtomsPage() {
+export default function Product() {
   return (
     <Wrapper>
       <CardSection />

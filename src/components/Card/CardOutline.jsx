@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
-import ColorPicker from './ColorPicker';
+import ColorPicker from '../common/ColorPicker';
 
-export default function CardOutline({ children }) {
+export default function CardOutline({ children, setPage, page }) {
   return (
     <Wrapper>
-      <AiOutlineArrowLeft size='1.3rem' />
+      <LeftArrow onClick={() => setPage(page - 1)}>
+        <AiOutlineArrowLeft size='1.3rem' />
+      </LeftArrow>
       {children}
-      <AiOutlineArrowRight size='1.3rem' />
+      <RightArrow onClick={() => setPage(page + 1)}>
+        <AiOutlineArrowRight size='1.3rem' />
+      </RightArrow>
       <ColorPickerBox>
         <ColorPicker />
       </ColorPickerBox>
@@ -23,5 +27,13 @@ const Wrapper = styled.div`
 const ColorPickerBox = styled.div`
   position: absolute;
   bottom: -15px;
-  left: 15px;
+  left: 20px;
+`;
+
+const LeftArrow = styled.div`
+  z-index: 101;
+`;
+
+const RightArrow = styled.div`
+  z-index: 101;
 `;
