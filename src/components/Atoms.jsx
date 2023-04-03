@@ -6,10 +6,6 @@ export default function AtomsPage() {
   return (
     <Wrapper>
       <CardSection />
-      <PageCountMobile>
-        <AiOutlineArrowLeft />
-        1 / 4<AiOutlineArrowRight />
-      </PageCountMobile>
     </Wrapper>
   );
 }
@@ -17,7 +13,8 @@ export default function AtomsPage() {
 const Wrapper = styled.main`
   padding: 42px 0 30px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+
   flex-grow: 1;
   position: relative;
   margin-bottom: 3rem;
@@ -26,7 +23,7 @@ const Wrapper = styled.main`
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    margin-top: 20rem;
+
   }
 `;
 

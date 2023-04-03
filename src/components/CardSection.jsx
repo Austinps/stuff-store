@@ -18,9 +18,8 @@ export default function CardSection() {
 
 const Center = styled.div`
   display: flex;
-
   align-items: center;
-  margin-left: 5rem;
+
   position: relative;
   flex-shrink: 0;
 
@@ -32,10 +31,19 @@ const Center = styled.div`
 const ColorPickerBox = styled.div`
   position: absolute;
   width: 80%;
-  bottom: 0px;
+  bottom: -5px;
   left: 20px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+
+const PageCountDesktop = styled.h3`
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  bottom: -26px;
+  right: 10px;
+  text-align: center;
 `;
