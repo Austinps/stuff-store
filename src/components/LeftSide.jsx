@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ArrowIcon from '../assets/ArrowIcon';
+import ArrowIcon from './common/ArrowIcon';
 import Flicker from './Flicker';
 
 export default function LeftSide() {
@@ -13,9 +13,7 @@ export default function LeftSide() {
           contribution to the heap!
         </CardTextLeft>
         <ActionBtn>
-          <Flicker>
-            Shop Now <ArrowIcon />
-          </Flicker>
+          Shop Now <ArrowIcon />
         </ActionBtn>
       </Content>
     </Wrapper>

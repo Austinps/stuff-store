@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 import Logo from '../common/Logo';
 import NavIcons from './NavIcons';
 import NavMenu from './NavMenu';
@@ -11,15 +12,11 @@ export default function Navigation() {
   return (
     <>
       <Header>
-        <Logo />
-        {width > breakpoint ? (
-          <NavMenu />
-        ) : (
-          <HamburgerBox>
-            <FaHamburger size='1.5rem' />
-          </HamburgerBox>
-        )}
-
+        {width <= breakpoint ? <FaHamburger size='1.5rem' /> : null}
+        <NavLink to='/'>
+          <Logo />
+        </NavLink>
+        {width > breakpoint ? <NavMenu /> : null}
         <NavIcons />
       </Header>
     </>
@@ -27,6 +24,7 @@ export default function Navigation() {
 }
 
 const Header = styled.div`
+
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -42,10 +40,4 @@ const Header = styled.div`
   left: 0;
   z-index: 6;
   }
-`;
-
-const HamburgerBox = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;

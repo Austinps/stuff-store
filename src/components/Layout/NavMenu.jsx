@@ -26,10 +26,11 @@ export default function NavMenu() {
 
 const HeaderMenu = styled.div`
   // text-transform: uppercase;
-  font-size: 11px;
+  font-size: 12px;
   width: 355px;
   display: flex;
   justify-content: space-around;
+  
   @media screen and (max-width: 740px) {
     display: none;
   }

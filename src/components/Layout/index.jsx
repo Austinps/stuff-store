@@ -16,6 +16,7 @@ const Container = styled.div`
   border-radius: 4px;
   width: 100%;
   display: flex;
+  justify-content;center;
   flex-direction: column;
   scroll-behavior: smooth;
   background-color: var(--bg-color);

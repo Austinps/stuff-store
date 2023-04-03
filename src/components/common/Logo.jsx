@@ -14,9 +14,14 @@ export default function Logo() {
 
 const Wrapper = styled.div`
   padding: 1rem;
-  margin-right: 1rem;
+  // margin-right: 1rem;
   display: flex;
   align-items: center;
+  margin-left: 60px;
+
+  @media screen and (max-width: 540px) {
+    margin-left: 32px;
+  }
 `;
 
 const MainTitle = styled.h1`
