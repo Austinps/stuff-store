@@ -1,19 +1,16 @@
+import Marquee from './Marquee';
+
 export default function RightSide() {
   return (
     <div class='blog-part right-blog'>
-      {/* <marquee width='100%' direction='left'>
-            <span>Now And Then You Miss It Sounds Make You Cry</span>
-            <span>Now In - MoMa Sharing Exhibition NOW</span>
-            <span>NYC Opens After Long Lockdown Check</span>
-          </marquee> */}
+      {/* <Marquee /> */}
       <div class='blog-right-title-container'>
-        <div class='blog-right-title'>Featured Articles</div>
+        <div class='blog-right-title'>Featured Products</div>
         <div class='blog-menu rounded'>See All</div>
       </div>
       <div class='blog-right'>
         <div class='blog-right-container'>
           <div class='blog-title-date'>
-            <div class='blog-right-page'>1</div>
             <div class='date'>12.06.2021</div>
           </div>
           <div class='blog-right-page-title'>Blonde - Widespread Acclaim</div>
@@ -24,7 +21,6 @@ export default function RightSide() {
         </div>
         <div class='blog-right-container'>
           <div class='blog-title-date'>
-            <div class='blog-right-page'>2</div>
             <div class='date'>12.06.2021</div>
           </div>
           <div class='blog-right-page-title'>
@@ -37,7 +33,6 @@ export default function RightSide() {
         </div>
         <div class='blog-right-container'>
           <div class='blog-title-date'>
-            <div class='blog-right-page'>3</div>
             <div class='date'>12.06.2021</div>
           </div>
           <div class='blog-right-page-title'>
@@ -50,7 +45,6 @@ export default function RightSide() {
         </div>
         <div class='blog-right-container'>
           <div class='blog-title-date'>
-            <div class='blog-right-page'>4</div>
             <div class='date'>12.06.2021</div>
           </div>
           <div class='blog-right-page-title'>
@@ -63,7 +57,6 @@ export default function RightSide() {
         </div>
         <div class='blog-right-container'>
           <div class='blog-title-date'>
-            <div class='blog-right-page'>5</div>
             <div class='date'>12.06.2021</div>
           </div>
           <div class='blog-right-page-title'>
@@ -76,7 +69,6 @@ export default function RightSide() {
         </div>
         <div class='blog-right-container'>
           <div class='blog-title-date'>
-            <div class='blog-right-page'>6</div>
             <div class='date'>12.06.2021</div>
           </div>
           <div class='blog-right-page-title'>
@@ -86,14 +78,6 @@ export default function RightSide() {
             The interior concept was conceived of by Dutch archtitect Studio
             Anne Holtrop who cleverly emulated
           </div>
-        </div>
-        <div class='circle'>
-          <div class='circle-title'>Leave Your Old Life Behind</div>
-          <div class='circle-subtitle'>
-            Don't try to be like someone else, be yourself. Be secure with
-            yourself.
-          </div>
-          <div class='circle-footer'>Explore</div>
         </div>
       </div>
     </div>

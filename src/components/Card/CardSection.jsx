@@ -4,7 +4,8 @@ import Card from './Card';
 import { products } from '../../data/products';
 
 export default function CardSection() {
-  const { id } = useParams();
+  let { id } = useParams();
+  id = id || 'atoms';
   const displayedItem = products.find((item) => item.slug === id);
 
   return (

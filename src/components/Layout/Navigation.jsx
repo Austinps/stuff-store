@@ -24,7 +24,7 @@ export default function Navigation() {
 }
 
 const Header = styled.div`
-
+// max-width: var(--max-width);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -39,5 +39,6 @@ const Header = styled.div`
   top: 0;
   left: 0;
   z-index: 6;
+  width:100%;
   }
 `;

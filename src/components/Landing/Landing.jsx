@@ -18,45 +18,29 @@ export default function Landing() {
 }
 
 const Wrapper = styled.div`
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;
-1,500&family=Inter:wght@300;
-400;
-500;
-600&family=Space+Grotesk:wght@400;
-500;
-600;
-700&display=swap');
-  * {
-    outline: none;
-    box-sizing: border-box;
-  }
-  html {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-  }
-  img {
-    max-width: 100%;
-  }
-  body {
-    background-color: #121418;
-    display: flex;
-    font-family: 'Inter', sans-serif;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 2em;
-    font-weight: 400;
-    height: 100vh;
-  }
-  @media screen and (max-width: 768px) {
-    body {
-      padding: 0;
-    }
-  }
+  // img {
+  //   max-width: 100%;
+  // }
+  // body {
+  //   background-color: #121418;
+  //   display: flex;
+  //   font-family: 'Inter', sans-serif;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-direction: column;
+  //   width: 100%;
+  //   padding: 0 2em;
+  //   font-weight: 400;
+  //   height: 100vh;
+  // }
+  // @media screen and (max-width: 768px) {
+  //   body {
+  //     padding: 0;
+  //   }
+  // }
   .blog {
     background-color: #e9e6e4;
-    max-width: 1350px;
+    max-width: var(--max-width);
     display: grid;
     height: 90vh;
     max-height: 800px;
