@@ -11,6 +11,7 @@ export default function CardBody({ children }) {
       <ImageWrapper>
         <img src={img} />
       </ImageWrapper>
+      <PageCountDesktop>1 of 4</PageCountDesktop>
     </Wrapper>
   );
 }
@@ -25,7 +26,7 @@ const Wrapper = styled.section`
   background-color: var(--bg-beach);
   color: var(--text);
   cursor: pointer;
-  margin: 3rem;
+  margin: 1.5rem;
   margin-right: 3rem;
   padding: 1rem;
 
@@ -70,4 +71,15 @@ const ImageWrapper = styled.div`
       left: 0%;
     }
   }
+`;
+
+const PageCountDesktop = styled.h3`
+  position: absolute;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  bottom: 6px;
+  right: 12px;
+  text-align: center;
+
 `;
