@@ -4,7 +4,6 @@ import LeftHeader from './LeftHeader';
 import Articles from './Articles';
 import RightSide from './RightSide';
 
-
 export default function Landing() {
   return (
     <Wrapper>

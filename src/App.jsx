@@ -9,7 +9,7 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path='/' element={<Landing />} />
+        <Route path='/' element={<Product />} />
         <Route path='/products/:id' element={<Product />} />
       </Routes>
     </Layout>

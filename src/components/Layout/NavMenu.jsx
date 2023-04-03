@@ -30,7 +30,7 @@ const HeaderMenu = styled.div`
   width: 355px;
   display: flex;
   justify-content: space-around;
-  
+
   @media screen and (max-width: 740px) {
     display: none;
   }
