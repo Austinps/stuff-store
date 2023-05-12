@@ -6,10 +6,10 @@
   --body-color: #2c2d2a;
   --bg-color: #e6decf;
   --clr-neon: #f35d5f;
-  --clr-green: #6be696;
+  --clr-green: #8bd8a6;
   --clr-yellow: #ffff00;
-  --neon-text-color: #f40;
-  --neon-border-color: #08f;
+  --neon-text-color: rgb(233, 116, 73);
+  --neon-border-color: rgb(101, 165, 221);
   --ecosystems-bg: #d4ebcb;
   --atoms-bg: #e6dac4;
   --molecules-bg: #c6d4ce;
@@ -18,6 +18,18 @@
   --body-font: 'Montserrat', sans-serif;
   --italic-font: 'Raleway', sans-serif;
   --max-width: 1350px;
+  --beige: #e2dccc;
+  --yellow: #dec022;
+  --black: #04110f;
+  --teal: #00acc1;
+  --purple: #6f7bd0;
+  --pink: #f2bfc6;
+  --orange-light: #e5a98e;
+  --orange: #e88c30;
+  --blue: #4030e8;
+  --red: #931a47;
+  --red-2: #ca3101;
+  --green: #009688;
 }
 * {
   box-sizing: border-box;

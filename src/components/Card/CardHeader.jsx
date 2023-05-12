@@ -7,7 +7,7 @@ export default function CardHeader({ name, subname, price }) {
       <ProductTitle>
         <div>
           <h2>
-            {name} <span>{subname}</span>
+            {name} <span>{subname || 'Harvest'}</span>
           </h2>
           <h3>
             €{price}

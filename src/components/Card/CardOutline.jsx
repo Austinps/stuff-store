@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 const ColorPickerBox = styled.div`
   position: absolute;
   bottom: -15px;
-  left: 20px;
+  left: 25  px;
 `;
 
 const LeftArrow = styled.div`
